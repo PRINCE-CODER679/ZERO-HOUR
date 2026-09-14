@@ -11,17 +11,16 @@ export default function Footer({ onOpenJoin }) {
         <img
           src={footerBg}
           alt="Parliament House at Night"
-          className="w-full h-full object-cover object-center filter contrast-125 brightness-75 scale-105"
+          className="w-full h-full object-cover object-center filter brightness-95 contrast-110"
         />
-        {/* Cinematic Gradient Overlays for High Text Contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/98 via-slate-950/85 to-slate-950/80" />
-        <div className="absolute inset-0 bg-slate-950/40 mix-blend-multiply" />
+        {/* Balanced Atmospheric Overlays to keep architecture vividly visible */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-slate-950/55" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-12 sm:pb-16 border-b border-white/10">
+        {/* Top Grid with Frosted Glass Panel */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-12 sm:pb-16 border border-white/10 bg-slate-950/65 backdrop-blur-md p-6 sm:p-10 rounded-sm shadow-2xl">
           
           {/* Brand & Axiom */}
           <div className="md:col-span-5 space-y-4 sm:space-y-6">
@@ -48,9 +47,9 @@ export default function Footer({ onOpenJoin }) {
             </p>
 
             <div className="font-mono text-[10px] sm:text-xs text-slate-300 pt-1 sm:pt-2">
-              <span className="text-[#ff4d6d] font-bold block mb-1">FOUNDATIONAL SEQUENCE:</span>
+              <span className="text-[#ff4d6d] font-bold block mb-1">FOUNDATIONAL CADENCE:</span>
               <span className="text-white font-medium tracking-wider text-[10px] sm:text-xs block break-words">
-                RESEARCH → THINK → SPEAK → NEGOTIATE → DECIDE → LEAD
+                INQUIRY → SYNTHESIS → DISCOURSE → CONCILIATION → ARBITRATION → STEWARDSHIP
               </span>
             </div>
           </div>
