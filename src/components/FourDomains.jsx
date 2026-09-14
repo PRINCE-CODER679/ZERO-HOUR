@@ -103,52 +103,52 @@ export default function FourDomains() {
   const activeDomain = DOMAINS[activeTab];
 
   return (
-    <section id="domains" className="py-16 sm:py-24 bg-[#0a0b0e] border-b border-white/[0.08] relative bg-grain">
+    <section id="domains" className="py-16 sm:py-24 bg-[#f8fafc] border-b border-slate-200 relative bg-grain">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Meta */}
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/[0.08] pb-3 sm:pb-4 mb-8 font-mono text-[10px] sm:text-[11px] text-[#8b8882] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-3 sm:pb-4 mb-8 font-mono text-[10px] sm:text-[11px] text-[#64748b] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="text-[#8b1528] font-bold">03</span>
-            <span className="text-white/20">/</span>
+            <span className="text-[#751a22] font-bold">03</span>
+            <span className="text-slate-300">/</span>
             <span>FOUR CORE DOMAINS // MAGAZINE SPREAD</span>
           </div>
-          <div className="text-[#c9c5bd]">
+          <div className="text-[#751a22] font-semibold">
             CHAPTER {activeDomain.number} OF 04
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#f7f5f0] uppercase tracking-tight font-normal">
-            Four Arenas of <span className="italic text-[#c9c5bd]">Experiential Rigor</span>
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
+            Four Arenas of <span className="italic text-[#751a22]">Experiential Rigor</span>
           </h2>
-          <p className="font-sans text-xs sm:text-base text-[#8b8882] mt-2 max-w-2xl">
+          <p className="font-sans text-xs sm:text-base text-[#475569] mt-2 max-w-2xl">
             Each domain is structured as an institutional proving ground designed to build practical mastery.
           </p>
         </div>
 
         {/* Chapter Index Navigation Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8 sm:mb-12 border-b border-white/[0.1] pb-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8 sm:mb-12 border-b border-slate-200 pb-3">
           {DOMAINS.map((domain, index) => {
             const isSelected = activeTab === index;
             return (
               <button
                 key={domain.id}
                 onClick={() => setActiveTab(index)}
-                className={`text-left p-3 sm:p-4 transition-all duration-200 border-l-2 ${
+                className={`text-left p-3 sm:p-4 transition-all duration-200 border-l-2 rounded-sm ${
                   isSelected
-                    ? 'border-[#8b1528] bg-[#14161f] text-white'
-                    : 'border-transparent bg-transparent text-[#8b8882] hover:text-[#c9c5bd] hover:bg-white/[0.02]'
+                    ? 'border-[#751a22] bg-white text-[#0f172a] shadow-sm'
+                    : 'border-transparent bg-transparent text-[#64748b] hover:text-[#0f172a] hover:bg-slate-100/70'
                 }`}
               >
-                <div className="font-mono text-[9px] sm:text-[10px] text-[#8b1528] font-bold tracking-widest mb-0.5 sm:mb-1">
+                <div className="font-mono text-[9px] sm:text-[10px] text-[#751a22] font-bold tracking-widest mb-0.5 sm:mb-1">
                   DOM // {domain.number}
                 </div>
-                <div className="font-serif text-base sm:text-lg font-semibold tracking-wide uppercase truncate">
+                <div className="font-serif text-base sm:text-lg font-bold tracking-wide uppercase truncate">
                   {domain.title}
                 </div>
-                <div className="font-mono text-[8px] sm:text-[9px] text-[#8b8882] uppercase tracking-wider truncate mt-0.5 hidden xs:block">
+                <div className="font-mono text-[8px] sm:text-[9px] text-[#64748b] uppercase tracking-wider truncate mt-0.5 hidden xs:block">
                   {domain.subtitle}
                 </div>
               </button>
@@ -164,73 +164,73 @@ export default function FourDomains() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.35 }}
-            className="bg-[#0f1116] border border-white/[0.09] p-5 sm:p-8 lg:p-12 shadow-2xl relative"
+            className="bg-white border border-slate-200 p-5 sm:p-8 lg:p-12 shadow-xl relative rounded-sm"
           >
             {/* Editorial Archival Tag Top Right */}
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/[0.08] pb-4 sm:pb-6 mb-6 sm:mb-8">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4 sm:pb-6 mb-6 sm:mb-8">
               <div className="flex items-center gap-2 sm:gap-3">
-                <span className="px-2 sm:px-2.5 py-0.5 bg-[#8b1528] text-white font-mono text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold">
+                <span className="px-2.5 py-0.5 bg-[#751a22] text-white font-mono text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold shadow-sm rounded-sm">
                   DOMAIN {activeDomain.number}
                 </span>
-                <span className="font-mono text-[10px] sm:text-xs text-[#8b8882] tracking-wider uppercase truncate">
+                <span className="font-mono text-[10px] sm:text-xs text-[#475569] tracking-wider uppercase truncate font-medium">
                   {activeDomain.category}
                 </span>
               </div>
-              <div className="font-mono text-[10px] sm:text-[11px] text-[#8b8882] tracking-widest uppercase">
-                REF: <span className="text-[#f7f5f0]">{activeDomain.archivalCode}</span>
+              <div className="font-mono text-[10px] sm:text-[11px] text-[#64748b] tracking-widest uppercase">
+                REF: <span className="text-[#0f172a] font-semibold">{activeDomain.archivalCode}</span>
               </div>
             </div>
 
             {/* Editorial Two-Column Magazine Spread */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               
-              {/* Left Column: Provocative Question, Narrative & Skills */}
+              {/* Left Column */}
               <div className="lg:col-span-6 space-y-6 sm:space-y-8">
                 <div>
-                  <h3 className="font-serif text-3xl sm:text-5xl text-[#f7f5f0] uppercase tracking-tight font-normal">
+                  <h3 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-bold">
                     {activeDomain.title}
                   </h3>
-                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#8b1528] mt-1 font-semibold">
+                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#751a22] mt-1 font-bold">
                     {activeDomain.subtitle}
                   </div>
                 </div>
 
-                {/* Central Provocative Question in Large Editorial Serif */}
-                <div className="p-4 sm:p-6 bg-[#151720] border-l-4 border-[#8b1528] border-y border-r border-white/[0.05]">
-                  <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#8b8882] block mb-2">
+                {/* Central Provocative Question */}
+                <div className="p-4 sm:p-6 bg-slate-50 border-l-4 border-[#751a22] border-y border-r border-slate-200 rounded-r-sm">
+                  <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#64748b] block mb-2 font-semibold">
                     The Central Inquiry
                   </span>
-                  <blockquote className="font-serif italic text-lg sm:text-2xl text-[#f7f5f0] leading-snug">
+                  <blockquote className="font-serif italic text-lg sm:text-2xl text-[#0f172a] leading-snug">
                     "{activeDomain.question}"
                   </blockquote>
                 </div>
 
                 {/* Narrative Description */}
-                <div className="space-y-3 text-[#c9c5bd] font-sans text-sm sm:text-base leading-relaxed">
+                <div className="space-y-3 text-[#334155] font-sans text-sm sm:text-base leading-relaxed">
                   <p>{activeDomain.description}</p>
                 </div>
 
                 {/* Simulation Crucible Note */}
-                <div className="p-3.5 sm:p-4 bg-white/[0.02] border border-white/[0.07] font-mono text-[11px] sm:text-xs text-[#8b8882]">
-                  <span className="text-white font-semibold uppercase block mb-1">
+                <div className="p-3.5 sm:p-4 bg-slate-50 border border-slate-200 font-mono text-[11px] sm:text-xs text-[#475569] rounded-sm">
+                  <span className="text-[#0f172a] font-bold uppercase block mb-1">
                     Crucible Environment:
                   </span>
-                  <span className="text-[#a8a49c]">{activeDomain.simulation}</span>
+                  <span className="text-[#334155]">{activeDomain.simulation}</span>
                 </div>
 
                 {/* Core Applied Competencies */}
                 <div>
-                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-[#8b8882] mb-3 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-[#8b1528]"></span>
+                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-[#64748b] mb-3 flex items-center gap-2 font-semibold">
+                    <span className="w-1.5 h-1.5 bg-[#751a22]"></span>
                     Core Applied Competencies
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {activeDomain.skills.map((skill) => (
                       <div
                         key={skill}
-                        className="flex items-center gap-2 p-2 bg-[#12141c] border border-white/[0.05] text-[11px] sm:text-xs font-mono text-[#e2ded6]"
+                        className="flex items-center gap-2 p-2.5 bg-slate-50 border border-slate-200 text-[11px] sm:text-xs font-mono text-[#0f172a] font-medium rounded-sm"
                       >
-                        <Check className="w-3.5 h-3.5 text-[#8b1528] shrink-0" />
+                        <Check className="w-3.5 h-3.5 text-[#751a22] shrink-0" />
                         <span className="truncate">{skill}</span>
                       </div>
                     ))}
@@ -238,30 +238,30 @@ export default function FourDomains() {
                 </div>
               </div>
 
-              {/* Right Column: Large Editorial Photograph Spread */}
+              {/* Right Column: Photograph */}
               <div className="lg:col-span-6 space-y-4">
-                <div className="relative group overflow-hidden border border-white/[0.12] bg-[#000]">
+                <div className="relative group overflow-hidden border border-slate-200 bg-slate-900 shadow-md rounded-sm">
                   <img
                     src={activeDomain.image}
                     alt={activeDomain.title}
-                    className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover object-center filter contrast-110 group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-[260px] sm:h-[380px] lg:h-[480px] object-cover object-center filter contrast-105 group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
                   
                   {/* Photo Stamp Overlay */}
-                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 p-2.5 sm:p-3 bg-black/80 backdrop-blur-sm border border-white/10 flex items-center justify-between text-[10px] sm:text-[11px] font-mono">
-                    <span className="text-white/90 truncate">{activeDomain.imageCaption}</span>
-                    <span className="text-[#8b1528] font-bold shrink-0 ml-2">VERIFIED</span>
+                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 p-2.5 sm:p-3 bg-white/95 backdrop-blur-sm border border-slate-200 flex items-center justify-between text-[10px] sm:text-[11px] font-mono shadow-md rounded-sm">
+                    <span className="text-[#0f172a] font-medium truncate">{activeDomain.imageCaption}</span>
+                    <span className="text-[#751a22] font-bold shrink-0 ml-2">VERIFIED</span>
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between text-[11px] sm:text-xs font-mono text-[#8b8882] px-1">
+                <div className="flex items-center justify-between text-[11px] sm:text-xs font-mono text-[#64748b] px-1">
                   <span>PLATE // {activeDomain.number}</span>
                   <div className="flex items-center gap-2">
                     <span>NEXT:</span>
                     <button
                       onClick={() => setActiveTab((prev) => (prev + 1) % DOMAINS.length)}
-                      className="text-[#f7f5f0] hover:text-[#8b1528] flex items-center gap-1 font-semibold"
+                      className="text-[#751a22] hover:underline flex items-center gap-1 font-bold"
                     >
                       <span>{DOMAINS[(activeTab + 1) % DOMAINS.length].title}</span>
                       <ArrowRight className="w-3 h-3" />

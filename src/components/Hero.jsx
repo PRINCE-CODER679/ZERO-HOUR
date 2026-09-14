@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import heroImg from '../assets/images/hero.jpg';
+import chamberImg from '../assets/images/hero_parliament.jpg';
 import logoImg from '../assets/images/zero_hour_logo.jpg';
 
 const SEQUENCE = [
@@ -23,38 +23,42 @@ export default function Hero({ onOpenJoin }) {
   }, []);
 
   return (
-    <section className="relative min-h-screen pt-24 sm:pt-28 pb-14 sm:pb-20 flex flex-col justify-between overflow-hidden bg-[#0a0b0e] border-b border-white/[0.08] bg-grain">
-      {/* Ambient Archival Background Image */}
-      <div className="absolute inset-0 z-0 opacity-15 pointer-events-none mix-blend-luminosity">
+    <section className="relative min-h-screen pt-24 sm:pt-28 pb-14 sm:pb-20 flex flex-col justify-between overflow-hidden bg-[#f8fafc] border-b border-slate-200 bg-grain">
+      {/* Grand Parliamentary Chamber Background Image */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
-          src={heroImg}
-          alt="Zero Hour Assembly Hall"
-          className="w-full h-full object-cover object-center filter grayscale contrast-125"
+          src={chamberImg}
+          alt="Parliamentary Assembly Hall Chamber"
+          className="w-full h-full object-cover object-center filter contrast-110 brightness-95 opacity-[0.16]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b0e] via-[#0a0b0e]/75 to-[#0a0b0e]/90" />
+        {/* Dual Soft Overlays for Maximum Typographic Legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f8fafc] via-[#f8fafc]/80 to-[#f8fafc]/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f8fafc] via-[#f8fafc]/85 to-transparent" />
       </div>
 
-      {/* Subtle Hairline Grid Overlay */}
+      {/* Grid Overlay */}
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-20"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px)`,
           backgroundSize: '80px 80px',
         }}
       />
 
       {/* Top Editorial Index Meta */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-4 sm:pt-6">
-        <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-4 border-b border-white/[0.08] pb-3 sm:pb-4 font-mono text-[10px] sm:text-[11px] text-[#8b8882] uppercase tracking-[0.18em] sm:tracking-[0.2em]">
+        <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-4 border-b border-slate-200 pb-3 sm:pb-4 font-mono text-[10px] sm:text-[11px] text-[#475569] uppercase tracking-[0.18em] sm:tracking-[0.2em]">
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="text-[#f7f5f0] font-semibold">ZERO HOUR</span>
-            <span className="text-white/20">/</span>
+            <span className="text-[#0f172a] font-bold">ZERO HOUR</span>
+            <span className="text-slate-300">/</span>
             <span className="truncate">FOUNDATIONAL TREATISE</span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-[#8b1528] font-bold truncate">DISCUSS. DEBATE. DISRUPT.</span>
-            <span className="hidden sm:inline text-white/20">/</span>
-            <span className="hidden sm:inline text-[#c9c5bd]">EST. 2026</span>
+            <span className="text-[#751a22] font-bold tracking-widest truncate">
+              DISCUSS. <span className="underline underline-offset-4 decoration-[#751a22]/40">DEBATE.</span> IMPACT.
+            </span>
+            <span className="hidden sm:inline text-slate-300">/</span>
+            <span className="hidden sm:inline text-[#64748b]">EST. 2026</span>
           </div>
         </div>
       </div>
@@ -69,10 +73,10 @@ export default function Hero({ onOpenJoin }) {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-2.5 sm:px-3 py-1 bg-[#14161d] border border-white/10 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-amber-200/90"
+              className="inline-flex items-center gap-2 px-3.5 py-1 bg-white border border-slate-200 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#751a22] shadow-sm font-semibold rounded-full"
             >
-              <span className="w-1.5 h-1.5 bg-[#8b1528] rounded-full"></span>
-              The Experiential Platform
+              <span className="w-1.5 h-1.5 bg-[#751a22] rounded-full animate-pulse"></span>
+              The Experiential Leadership Platform
             </motion.div>
 
             <motion.div
@@ -80,13 +84,13 @@ export default function Hero({ onOpenJoin }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h1 className="font-serif text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] leading-[0.98] sm:leading-[0.95] tracking-tight text-[#f7f5f0] uppercase font-normal break-words">
+              <h1 className="font-serif text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] leading-[0.98] sm:leading-[0.95] tracking-tight text-[#0f172a] uppercase font-normal break-words">
                 THE MOMENT <br />
-                <span className="italic font-light text-[#e2ded6] block mt-1">
+                <span className="italic font-light text-[#475569] block mt-1">
                   IDEAS BECOME
                 </span>
-                <span className="font-semibold text-white tracking-normal block mt-1 text-[#f7f5f0]">
-                  ACTION<span className="text-[#8b1528]">.</span>
+                <span className="font-semibold text-[#751a22] tracking-normal block mt-1">
+                  ACTION<span className="text-[#9e232b]">.</span>
                 </span>
               </h1>
             </motion.div>
@@ -95,9 +99,9 @@ export default function Hero({ onOpenJoin }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-base sm:text-lg md:text-xl text-[#c9c5bd] max-w-2xl font-sans font-light leading-relaxed pt-2 border-l-2 border-[#8b1528] pl-3 sm:pl-5"
+              className="text-base sm:text-lg md:text-xl text-[#334155] max-w-2xl font-sans font-normal leading-relaxed pt-2 border-l-2 border-[#751a22] pl-3 sm:pl-5"
             >
-              A student-led platform for leadership, public affairs, and real-world decision making.
+              A student-led platform for leadership, public affairs, and real-world decision making. Reconciling theoretical statecraft with high-pressure institutional execution.
             </motion.p>
           </div>
 
@@ -106,41 +110,41 @@ export default function Hero({ onOpenJoin }) {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="lg:col-span-5 bg-[#111318]/95 border border-white/[0.1] p-5 sm:p-7 shadow-2xl relative flex flex-col justify-between"
+            className="lg:col-span-5 bg-white/95 backdrop-blur-sm border border-slate-200/90 p-5 sm:p-7 shadow-2xl rounded-md relative flex flex-col justify-between"
           >
             {/* Official Logo Artwork Container */}
-            <div className="relative border border-white/[0.08] bg-[#07080b] p-3 mb-5 sm:mb-6 group overflow-hidden">
+            <div className="relative border border-slate-100 bg-[#fafafa] p-4 mb-5 sm:mb-6 group overflow-hidden rounded-sm shadow-inner">
               <img
                 src={logoImg}
-                alt="Zero Hour Official Logo — Discuss. Debate. Disrupt."
-                className="w-full h-auto max-h-[240px] sm:max-h-[290px] object-contain mx-auto filter contrast-105"
+                alt="Zero Hour Official Logo — Discuss. Debate. Impact."
+                className="w-full h-auto max-h-[260px] sm:max-h-[300px] object-contain mx-auto transition-transform duration-500 group-hover:scale-[1.02]"
               />
-              <div className="mt-2.5 pt-2 border-t border-white/[0.08] flex items-center justify-between font-mono text-[9px] sm:text-[10px] text-[#8b8882] uppercase tracking-wider">
-                <span>OFFICIAL SEAL</span>
-                <span className="text-[#8b1528] font-semibold">ZERO HOUR</span>
+              <div className="mt-3 pt-2.5 border-t border-slate-200/70 flex items-center justify-between font-mono text-[9px] sm:text-[10px] text-[#64748b] uppercase tracking-wider">
+                <span className="font-semibold">OFFICIAL SEAL</span>
+                <span className="text-[#751a22] font-bold">ZERO HOUR</span>
               </div>
             </div>
 
             <div className="space-y-2 sm:space-y-3">
-              <p className="font-serif italic text-base sm:text-lg text-[#f7f5f0] leading-snug">
+              <p className="font-serif italic text-base sm:text-lg text-[#0f172a] leading-snug">
                 "Leadership cannot be developed by observation alone. It has to be practised."
               </p>
-              <p className="font-mono text-[11px] sm:text-xs text-[#8b8882] uppercase tracking-wider">
+              <p className="font-mono text-[11px] sm:text-xs text-[#64748b] uppercase tracking-wider">
                 — Zero Hour Charter §1
               </p>
             </div>
             
-            <div className="pt-5 sm:pt-6 mt-5 sm:mt-6 border-t border-white/[0.08] flex flex-col sm:flex-row gap-2.5 sm:gap-3">
+            <div className="pt-5 sm:pt-6 mt-5 sm:mt-6 border-t border-slate-100 flex flex-col sm:flex-row gap-2.5 sm:gap-3">
               <button
                 onClick={onOpenJoin}
-                className="flex-1 py-3 bg-[#8b1528] hover:bg-[#a61c32] text-white font-mono text-xs uppercase tracking-widest font-semibold transition-all flex items-center justify-center gap-2 border border-red-500/30 shadow-lg"
+                className="flex-1 py-3 bg-[#751a22] hover:bg-[#8f202a] text-white font-mono text-xs uppercase tracking-widest font-semibold transition-all flex items-center justify-center gap-2 shadow-md rounded-sm"
               >
                 <span>Enter The Crucible</span>
-                <span className="text-white/70">→</span>
+                <span className="text-white/80">→</span>
               </button>
               <a
                 href="#experience"
-                className="py-3 px-4 bg-white/[0.03] hover:bg-white/[0.07] text-[#c9c5bd] hover:text-white font-mono text-xs uppercase tracking-widest text-center border border-white/[0.08] transition-all"
+                className="py-3 px-4 bg-slate-50 hover:bg-slate-100 text-[#0f172a] font-mono text-xs uppercase tracking-widest text-center border border-slate-200 transition-all font-semibold rounded-sm"
               >
                 Methodology
               </a>
@@ -149,15 +153,15 @@ export default function Hero({ onOpenJoin }) {
         </div>
       </div>
 
-      {/* Bottom Editorial Scroll Sequence: RESEARCH -> THINK -> SPEAK -> NEGOTIATE -> DECIDE -> LEAD */}
+      {/* Bottom Editorial Scroll Sequence */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-4 sm:pt-6">
-        <div className="border-t border-white/[0.12] pt-4 sm:pt-5">
+        <div className="border-t border-slate-200 pt-4 sm:pt-5">
           <div className="flex items-center justify-between mb-3 sm:mb-4">
-            <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#8b8882] flex items-center gap-2">
-              <span className="w-2 h-0.5 bg-[#8b1528]"></span>
+            <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#475569] flex items-center gap-2 font-medium">
+              <span className="w-2 h-0.5 bg-[#751a22]"></span>
               The Hexagonal Progression Sequence
             </span>
-            <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#8b8882] hidden sm:block">
+            <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#64748b] hidden sm:block">
               Stage {SEQUENCE[activeStep].step} of 06
             </span>
           </div>
@@ -169,26 +173,26 @@ export default function Hero({ onOpenJoin }) {
                 <button
                   key={item.word}
                   onClick={() => setActiveStep(idx)}
-                  className={`text-left p-2.5 sm:p-3.5 transition-all duration-300 border relative ${
+                  className={`text-left p-2.5 sm:p-3.5 transition-all duration-300 border relative rounded-sm ${
                     isActive
-                      ? 'bg-[#181b22] border-[#8b1528] shadow-lg ring-1 ring-[#8b1528]/50'
-                      : 'bg-[#0f1116]/60 border-white/[0.06] hover:bg-[#14161d] hover:border-white/20'
+                      ? 'bg-white border-[#751a22] shadow-md ring-1 ring-[#751a22]/30'
+                      : 'bg-white/85 backdrop-blur-sm border-slate-200 hover:bg-white hover:border-slate-300'
                   }`}
                 >
                   {isActive && (
-                    <span className="absolute top-0 left-0 right-0 h-0.5 bg-[#8b1528]" />
+                    <span className="absolute top-0 left-0 right-0 h-0.5 bg-[#751a22]" />
                   )}
                   <div className="flex items-center justify-between font-mono text-[9px] sm:text-[10px] mb-1">
-                    <span className={isActive ? 'text-[#8b1528] font-bold' : 'text-[#8b8882]'}>
+                    <span className={isActive ? 'text-[#751a22] font-bold' : 'text-[#64748b]'}>
                       {item.step}
                     </span>
-                    <span className="text-white/30 text-xs">
+                    <span className="text-slate-300 text-xs">
                       {idx < SEQUENCE.length - 1 ? '→' : '✦'}
                     </span>
                   </div>
                   <div
                     className={`font-serif text-sm sm:text-base lg:text-lg font-bold tracking-tight uppercase ${
-                      isActive ? 'text-[#f7f5f0]' : 'text-[#8b8882]'
+                      isActive ? 'text-[#751a22]' : 'text-[#475569]'
                     }`}
                   >
                     {item.word}
@@ -199,12 +203,12 @@ export default function Hero({ onOpenJoin }) {
           </div>
 
           {/* Active Step Real-time Descriptor */}
-          <div className="mt-2.5 sm:mt-3 py-2 px-3 sm:px-4 bg-[#12141a]/80 border border-white/[0.06] flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-2 text-[11px] sm:text-xs font-mono text-[#c9c5bd]">
+          <div className="mt-2.5 sm:mt-3 py-2.5 px-3 sm:px-4 bg-white/90 backdrop-blur-sm border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-2 text-[11px] sm:text-xs font-mono text-[#334155] shadow-sm rounded-sm">
             <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-              <span className="text-[#8b1528] font-bold">[{SEQUENCE[activeStep].word}]:</span>
-              <span className="text-[#a8a49c]">{SEQUENCE[activeStep].desc}</span>
+              <span className="text-[#751a22] font-bold">[{SEQUENCE[activeStep].word}]:</span>
+              <span className="text-[#475569]">{SEQUENCE[activeStep].desc}</span>
             </div>
-            <a href="#experience" className="text-[#8b8882] hover:text-white underline underline-offset-4 shrink-0 hidden md:inline">
+            <a href="#experience" className="text-[#751a22] hover:underline underline-offset-4 shrink-0 hidden md:inline font-semibold">
               Detail →
             </a>
           </div>

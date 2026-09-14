@@ -47,28 +47,28 @@ const ECOSYSTEM = [
 
 export default function BeyondEvents() {
   return (
-    <section id="ecosystem" className="py-24 bg-[#0a0b0e] border-b border-white/[0.08] relative bg-grain">
+    <section id="ecosystem" className="py-24 bg-white border-b border-slate-200 relative bg-grain">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Meta */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.08] pb-4 mb-8 font-mono text-[11px] text-[#8b8882] uppercase tracking-[0.25em]">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-8 font-mono text-[11px] text-[#64748b] uppercase tracking-[0.25em]">
           <div className="flex items-center gap-3">
-            <span className="text-[#8b1528] font-bold">06</span>
-            <span className="text-white/20">/</span>
+            <span className="text-[#751a22] font-bold">06</span>
+            <span className="text-slate-300">/</span>
             <span>THE CONTINUOUS ECOSYSTEM // BEYOND EVENTS</span>
           </div>
-          <div className="text-[#c9c5bd]">
+          <div className="text-[#751a22] font-semibold">
             AN ENDURING INSTITUTIONAL CADENCE
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-14">
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#f7f5f0] uppercase tracking-tight font-normal">
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
             More Than An Event Calendar. <br />
-            <span className="italic text-[#c9c5bd]">A Year-Round Development Engine.</span>
+            <span className="italic text-[#751a22]">A Year-Round Development Engine.</span>
           </h2>
-          <p className="font-sans text-sm sm:text-base text-[#8b8882] mt-2 max-w-2xl">
+          <p className="font-sans text-sm sm:text-base text-[#475569] mt-2 max-w-2xl">
             Zero Hour is not built around sporadic one-off festivals. It operates as an enduring institutional ecosystem with consistent intellectual cadence.
           </p>
         </div>
@@ -80,39 +80,39 @@ export default function BeyondEvents() {
             return (
               <div
                 key={item.number}
-                className="bg-[#111319] border border-white/[0.08] p-8 relative group hover:border-[#8b1528]/60 transition-all duration-300 flex flex-col justify-between"
+                className="bg-slate-50/70 border border-slate-200 p-8 relative group hover:border-[#751a22] hover:bg-white transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-lg rounded-sm"
               >
                 <div>
-                  <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 mb-6">
+                  <div className="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
                     <div className="flex items-center gap-2">
-                      <span className="font-mono text-xs font-bold text-[#8b1528]">
+                      <span className="font-mono text-xs font-bold text-[#751a22]">
                         ECO // {item.number}
                       </span>
-                      <span className="text-white/20">|</span>
-                      <span className="font-mono text-[10px] text-[#8b8882] tracking-widest uppercase">
+                      <span className="text-slate-300">|</span>
+                      <span className="font-mono text-[10px] text-[#64748b] tracking-widest uppercase">
                         {item.tagline}
                       </span>
                     </div>
-                    <span className="font-mono text-[10px] text-amber-200/80 bg-amber-950/20 px-2 py-0.5 border border-amber-900/30">
+                    <span className="font-mono text-[10px] text-amber-900 bg-amber-50 px-2.5 py-0.5 border border-amber-200 font-semibold rounded-sm">
                       {item.frequency}
                     </span>
                   </div>
 
                   <div className="flex items-center gap-3 mb-3">
-                    <IconComponent className="w-5 h-5 text-[#8b1528]" />
-                    <h3 className="font-serif text-2xl sm:text-3xl text-[#f7f5f0] uppercase font-medium">
+                    <IconComponent className="w-5 h-5 text-[#751a22]" />
+                    <h3 className="font-serif text-2xl sm:text-3xl text-[#0f172a] uppercase font-bold">
                       {item.title}
                     </h3>
                   </div>
 
-                  <p className="text-sm sm:text-base text-[#c9c5bd] leading-relaxed mb-6 font-sans">
+                  <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-6 font-sans">
                     {item.description}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between font-mono text-xs">
-                  <span className="text-[#8b8882] text-[11px]">Primary Format:</span>
-                  <span className="text-[#f7f5f0] font-medium">{item.deliverable}</span>
+                <div className="pt-4 border-t border-slate-200 flex items-center justify-between font-mono text-xs">
+                  <span className="text-[#64748b] text-[11px] font-medium">Primary Format:</span>
+                  <span className="text-[#751a22] font-semibold">{item.deliverable}</span>
                 </div>
               </div>
             );

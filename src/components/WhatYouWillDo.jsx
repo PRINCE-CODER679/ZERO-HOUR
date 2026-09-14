@@ -65,27 +65,27 @@ export default function WhatYouWillDo() {
   const activeAction = ACTIONS[activeIdx];
 
   return (
-    <section id="actions" className="py-24 bg-[#0c0d10] border-b border-white/[0.08] relative bg-grain">
+    <section id="actions" className="py-24 bg-[#f8fafc] border-b border-slate-200 relative bg-grain">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Meta */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.08] pb-4 mb-10 font-mono text-[11px] text-[#8b8882] uppercase tracking-[0.25em]">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-10 font-mono text-[11px] text-[#64748b] uppercase tracking-[0.25em]">
           <div className="flex items-center gap-3">
-            <span className="text-[#8b1528] font-bold">05</span>
-            <span className="text-white/20">/</span>
+            <span className="text-[#751a22] font-bold">05</span>
+            <span className="text-slate-300">/</span>
             <span>APPLIED PRACTICE // WHAT WILL YOU ACTUALLY DO?</span>
           </div>
-          <div className="text-[#8b8882]">
+          <div className="text-[#751a22] font-semibold">
             EIGHT CORE DISCIPLINES
           </div>
         </div>
 
         {/* Section Editorial Headline */}
         <div className="mb-14">
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#f7f5f0] uppercase tracking-tight font-normal">
-            Direct Practice. <span className="italic text-[#8b8882]">No Passive Theory.</span>
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
+            Direct Practice. <span className="italic text-[#751a22]">No Passive Theory.</span>
           </h2>
-          <p className="font-sans text-sm sm:text-base text-[#8b8882] mt-2 max-w-2xl">
+          <p className="font-sans text-sm sm:text-base text-[#475569] mt-2 max-w-2xl">
             Members engage in concrete simulations every week. Select any discipline to review its institutional application.
           </p>
         </div>
@@ -93,8 +93,8 @@ export default function WhatYouWillDo() {
         {/* Editorial Two-Column Ledger Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Left Column: Editorial Typographic List */}
-          <div className="lg:col-span-7 divide-y divide-white/[0.06] border-y border-white/[0.06]">
+          {/* Left Column */}
+          <div className="lg:col-span-7 divide-y divide-slate-200 border-y border-slate-200">
             {ACTIONS.map((action, idx) => {
               const isActive = activeIdx === idx;
               return (
@@ -102,17 +102,17 @@ export default function WhatYouWillDo() {
                   key={action.id}
                   onClick={() => setActiveIdx(idx)}
                   onMouseEnter={() => setActiveIdx(idx)}
-                  className={`py-4 sm:py-5 px-3 cursor-pointer transition-all duration-200 flex items-center justify-between group ${
-                    isActive ? 'bg-white/[0.03]' : 'hover:bg-white/[0.015]'
+                  className={`py-4 sm:py-5 px-3 cursor-pointer transition-all duration-200 flex items-center justify-between group rounded-sm ${
+                    isActive ? 'bg-white shadow-sm border-l-2 border-[#751a22]' : 'hover:bg-white/60'
                   }`}
                 >
                   <div className="flex items-center gap-4 sm:gap-6">
-                    <span className={`font-mono text-xs ${isActive ? 'text-[#8b1528] font-bold' : 'text-[#8b8882]'}`}>
+                    <span className={`font-mono text-xs ${isActive ? 'text-[#751a22] font-bold' : 'text-[#64748b]'}`}>
                       {action.id}
                     </span>
                     <span
                       className={`font-serif text-lg sm:text-2xl uppercase tracking-tight transition-colors ${
-                        isActive ? 'text-[#f7f5f0]' : 'text-[#8b8882] group-hover:text-[#c9c5bd]'
+                        isActive ? 'text-[#0f172a] font-bold' : 'text-[#475569] group-hover:text-[#0f172a]'
                       }`}
                     >
                       {action.title}
@@ -120,7 +120,7 @@ export default function WhatYouWillDo() {
                   </div>
 
                   <span className={`font-mono text-[10px] uppercase tracking-wider hidden sm:inline ${
-                    isActive ? 'text-[#8b1528]' : 'text-[#8b8882]/60'
+                    isActive ? 'text-[#751a22] font-bold' : 'text-[#64748b]'
                   }`}>
                     {action.domain}
                   </span>
@@ -129,7 +129,7 @@ export default function WhatYouWillDo() {
             })}
           </div>
 
-          {/* Right Column: Editorial Dossier Note */}
+          {/* Right Column */}
           <div className="lg:col-span-5 lg:sticky lg:top-32">
             <AnimatePresence mode="wait">
               <motion.div
@@ -138,26 +138,26 @@ export default function WhatYouWillDo() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
-                className="bg-[#111318] border border-white/[0.08] p-6 sm:p-8"
+                className="bg-white border border-slate-200 p-6 sm:p-8 shadow-xl rounded-sm"
               >
-                <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 mb-6 font-mono text-[10px] text-[#8b8882] uppercase tracking-widest">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-6 font-mono text-[10px] text-[#64748b] uppercase tracking-widest">
                   <span>DISCIPLINE {activeAction.id}</span>
-                  <span className="text-[#8b1528]">{activeAction.domain}</span>
+                  <span className="text-[#751a22] font-bold">{activeAction.domain}</span>
                 </div>
 
-                <h3 className="font-serif text-2xl text-[#f7f5f0] uppercase mb-3">
+                <h3 className="font-serif text-2xl text-[#0f172a] uppercase mb-3 font-bold">
                   {activeAction.title}
                 </h3>
 
-                <p className="text-sm text-[#c9c5bd] font-sans leading-relaxed mb-6">
+                <p className="text-sm text-[#334155] font-sans leading-relaxed mb-6">
                   {activeAction.context}
                 </p>
 
-                <div className="border-t border-white/[0.06] pt-4 space-y-2">
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-[#8b8882]">
+                <div className="border-t border-slate-100 pt-4 space-y-2 bg-slate-50 p-4 border border-slate-200/80 rounded-sm">
+                  <div className="font-mono text-[10px] uppercase tracking-widest text-[#64748b] font-semibold">
                     Realistic Simulation Context:
                   </div>
-                  <p className="font-mono text-xs text-[#a8a49c] leading-relaxed">
+                  <p className="font-mono text-xs text-[#751a22] leading-relaxed font-medium">
                     "{activeAction.scenario}"
                   </p>
                 </div>
