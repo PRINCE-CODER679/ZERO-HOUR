@@ -4,40 +4,40 @@ import { Cpu, Scale, Briefcase, Feather, Landmark, Globe } from 'lucide-react';
 
 const DISCIPLINES = [
   {
-    discipline: 'ENGINEERING & TECHNOLOGY',
+    discipline: 'ENGINEERING & COMPUTATIONAL SCIENCES',
     icon: Cpu,
-    why: 'Coders and engineers understand system architecture, edge cases, and first-principles logic. In Zero Hour, they convert technical rigor into lethal policy debate.',
-    crossover: 'Statutory regulation of AI, critical infrastructure logistics, and cyber warfare treaties.',
+    why: 'Engineers and computer scientists perceive systems through topology, edge cases, and algorithmic rigor. In Zero Hour, they translate technical precision into authoritative statutory governance.',
+    crossover: 'Statutory governance of artificial intelligence, orbital satellite sovereignty, and cyber-warfare protocols.',
   },
   {
-    discipline: 'LAW & JURISPRUDENCE',
+    discipline: 'JURISPRUDENCE & LEGAL ADVOCACY',
     icon: Scale,
-    why: 'Legal minds dissect statutory ambiguity and treaty clauses with clinical precision. Zero Hour tests their capacity to defend arguments under hostile cross-examination.',
-    crossover: 'Constitutional moot chambers, bilateral treaty drafting, and legislative reform.',
+    why: 'Legal scholars dissect statutory lacunae and treaty codicils with surgical detachment. Zero Hour stress-tests their capacity to sustain oral advocacy under adversarial judicial scrutiny.',
+    crossover: 'Appellate moot courts, bilateral extradition conventions, and supranational treaty adjudication.',
   },
   {
-    discipline: 'ECONOMICS & FINANCE',
+    discipline: 'MACROECONOMICS & QUANTITATIVE FINANCE',
     icon: Briefcase,
-    why: 'Economics teaches allocation of scarce resources. Zero Hour forces economists to face the messy political friction that textbook models ignore.',
-    crossover: 'Sanction regime architecture, sovereign debt negotiations, and national budget allocation.',
+    why: 'Classical economists model theoretical equilibria; Zero Hour confronts them with the raw political realpolitik and resource weaponization that econometric models often overlook.',
+    crossover: 'Sanction regime calibration, sovereign debt restructuring, and central bank crisis liquidity.',
   },
   {
-    discipline: 'LIBERAL ARTS & HUMANITIES',
+    discipline: 'PHILOSOPHY, HISTORY & HUMANITIES',
     icon: Feather,
-    why: 'History, literature, and philosophy provide the deepest levers of human psychology and narrative warfare. Zero Hour transforms prose into persuasive public oratory.',
-    crossover: 'Diplomatic discourse, ideological coalition framing, and crisis communication.',
+    why: 'Historians and philosophers possess the deepest understanding of statecraft precedent, dialectical rhetoric, and civilizational dynamics. Zero Hour transforms prose into commanding parliamentary cadence.',
+    crossover: 'Diplomatic discourse, ideological treaty framing, and geopolitical crisis narratology.',
   },
   {
-    discipline: 'COMMERCE & MANAGEMENT',
+    discipline: 'STRATEGIC MANAGEMENT & COMMERCE',
     icon: Landmark,
-    why: 'Management students bring operational discipline, stakeholder alignment, and boardroom negotiation. Zero Hour challenges them with high-stakes geopolitical crises.',
-    crossover: 'Strategic multi-party negotiations, inter-agency mediation, and cabinet management.',
+    why: 'Business strategists contribute operational discipline, multi-party coalition alignment, and capital allocation. Zero Hour thrusts them into non-linear geopolitical crisis cabinets.',
+    crossover: 'Multilateral trade accords, strategic reserve logistics, and public-private emergency mobilization.',
   },
   {
-    discipline: 'SCIENCE & RESEARCH',
+    discipline: 'NATURAL SCIENCES & EMPIRICAL RESEARCH',
     icon: Globe,
-    why: 'Researchers know how to interrogate data without bias. Zero Hour teaches scientists how to present decisive evidentiary arguments before non-technical decision makers.',
-    crossover: 'Commanding interdisciplinary teams under rigid deadlines and real consequence.',
+    why: 'Pure scientists understand evidentiary falsifiability and rigorous hypothesis testing. Zero Hour trains them to defend empirical truth before skeptical, politically motivated assemblies.',
+    crossover: 'Transnational biosecurity accords, environmental carrying-capacity treaties, and crisis telemetry.',
   },
 ];
 

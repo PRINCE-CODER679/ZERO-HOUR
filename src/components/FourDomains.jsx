@@ -11,34 +11,34 @@ const DOMAINS = [
   {
     id: 'diplomacy',
     number: '01',
-    category: 'STATECRAFT & GEOPOLITICS',
+    category: 'STATECRAFT & GEOPOLITICAL DIPLOMACY',
     title: 'DIPLOMACY',
-    subtitle: 'MODEL UNITED NATIONS & CRISIS COMMITTEES',
-    question: 'When sovereign national interests collide in an escalating international emergency, how do you forge a legally binding resolution without conceding non-negotiable red lines?',
+    subtitle: 'MULTILATERAL STATECRAFT & CRISIS CONCLAVES',
+    question: 'When sovereign national imperatives collide in an escalating international emergency, how do you forge a legally binding treaty without conceding existential red lines?',
     description:
-      'Immersive multilateral diplomacy, bilateral negotiations, and emergency crisis committees. Delegates represent sovereign nation-states, navigate complex geopolitical intelligence dossiers, author operative clauses, and form strategic voting blocs under extreme clock constraints.',
+      'Immersive multilateral statecraft, bilateral conclaves, and emergency crisis committees. Delegates represent sovereign nation-states, navigate complex geopolitical intelligence dossiers, author operative clauses, and assemble decisive voting coalitions under extreme clock compression.',
     skills: [
       'Multilateral Statecraft',
       'Bilateral Treaty Negotiation',
       'Crisis Cabinet Command',
-      'Geopolitical Intelligence Analysis',
+      'Geopolitical Dossier Analysis',
       'Coalition Bloc Architecture',
       'Consensus Building',
     ],
-    simulation: 'Simulated UN Security Council & Historical Crisis Cabinets with dynamic intelligence updates.',
+    simulation: 'Simulated UN Security Council & Historical Crisis Cabinets with dynamic intelligence injects.',
     image: diplomacyImg,
-    imageCaption: 'Fig 1.1 — Multilateral Summit & Security Council Deliberation Chamber.',
+    imageCaption: 'Plate 1.1 — Multilateral Summit & Security Council Deliberation Chamber.',
     archivalCode: 'ZH-DIP-MUN-01',
   },
   {
     id: 'debate',
     number: '02',
-    category: 'RHETORIC & INTELLECTUAL COMBAT',
+    category: 'DIALECTICAL COMBAT & RHETORICAL DISCOURSE',
     title: 'DEBATE',
-    subtitle: 'DEBATE & DISCOURSE',
-    question: 'How do you dismantle a formidable adversary’s core premise in real time under rigorous scrutiny without sacrificing intellectual composure or philosophical depth?',
+    subtitle: 'PARLIAMENTARY RHETORIC & ORAL ADVOCACY',
+    question: 'How do you dismantle a formidable adversary’s foundational premise in real time under strict procedural scrutiny while maintaining intellectual composure and commanding authority?',
     description:
-      'Oxford-style, British Parliamentary, and Asian Parliamentary formats designed to sharpen cognitive agility. Members engage in high-speed argument deconstruction, rebuttal synthesis, points of information, and persuasive public advocacy on the most contentious issues of modern civilization.',
+      'Oxford-Union, British Parliamentary, and Asian Parliamentary formats engineered to sharpen cognitive velocity. Members engage in real-time argument deconstruction, rebuttal synthesis, points of information, and persuasive public advocacy on the most contentious constitutional and moral questions of our era.',
     skills: [
       'Forensic Cross-Examination',
       'Rhetorical Precision & Cadence',
@@ -47,9 +47,9 @@ const DOMAINS = [
       'Parliamentary Procedure Mastery',
       'Adversarial Poise',
     ],
-    simulation: 'Live Parliamentary chambers with 15-minute preparation motions and unscripted POI challenges.',
+    simulation: 'Live Parliamentary chambers operating under 15-minute motion advisories and unscripted POI challenges.',
     image: debateImg,
-    imageCaption: 'Fig 2.1 — Oxford-Union Style Parliamentary Floor with Tiered Benches.',
+    imageCaption: 'Plate 2.1 — Oxford-Union Style Parliamentary Floor with Tiered Benches.',
     archivalCode: 'ZH-DEB-DIS-02',
   },
   {
@@ -57,21 +57,21 @@ const DOMAINS = [
     number: '03',
     category: 'GOVERNANCE & SOCIO-ECONOMIC ARCHITECTURE',
     title: 'POLICY',
-    subtitle: 'PUBLIC POLICY & REGULATORY REFORM',
-    question: 'How do you translate volatile societal friction, economic resource constraints, and legal boundaries into enforceable, pragmatic public legislation?',
+    subtitle: 'STATUTORY ANALYSIS & REGULATORY REFORM',
+    question: 'How do you translate volatile societal friction, macroeconomic constraints, and constitutional boundaries into durable, enforceable public legislation?',
     description:
-      'Demystifying governance through forensic policy analysis. Students deconstruct macroeconomic data, evaluate statutory frameworks, author comprehensive policy briefs, and subject regulatory drafts to rigorous peer review and stakeholder impact assessments.',
+      'Demystifying the mechanics of governance through forensic policy analysis. Candidates deconstruct macroeconomic data, evaluate statutory frameworks, author comprehensive policy white papers, and defend regulatory drafts before simulated parliamentary standing committees and expert witness panels.',
     skills: [
-      'Policy Brief & White Paper Drafting',
+      'White Paper & Statutory Drafting',
       'Macroeconomic Impact Modeling',
-      'Regulatory & Statutory Analysis',
-      'Stakeholder Conflict Resolution',
+      'Regulatory & Jurisprudential Analysis',
+      'Stakeholder Conflict Mediation',
       'Evidence-Based Governance',
       'Implementation Roadmapping',
     ],
     simulation: 'Think Tank Policy Briefing Rounds and Parliamentary Standing Committee Simulations.',
     image: policyImg,
-    imageCaption: 'Fig 3.1 — Policy Task Force Reviewing Annotated Legislative Frameworks.',
+    imageCaption: 'Plate 3.1 — Policy Task Force Reviewing Annotated Legislative Frameworks.',
     archivalCode: 'ZH-POL-PBL-03',
   },
   {
@@ -79,10 +79,10 @@ const DOMAINS = [
     number: '04',
     category: 'EXECUTIVE COMMAND & STATE MACHINERY',
     title: 'ADMINISTRATION',
-    subtitle: 'CIVIL SERVICES & GOVERNANCE',
-    question: 'When systemic disruption, civic breakdown, and emergency logistics overwhelm public infrastructure, how do you exercise decisive, ethical administrative command?',
+    subtitle: 'CIVIL SERVICES & EMERGENCY GOVERNANCE',
+    question: 'When systemic breakdown, civic unrest, and logistical bottlenecks overwhelm public infrastructure, how do you exercise decisive, constitutional administrative command?',
     description:
-      'Grounded in the operational realities of civil administration and public services. Participants simulate district magistrate interventions, inter-agency disaster logistics, regulatory enforcement, and ethical dilemmas where textbook solutions crumble.',
+      'Grounded in the operational realities of civil administration and public machinery. Participants simulate district magistrate interventions, inter-agency disaster logistics, regulatory enforcement, and high-stakes ethical dilemmas where textbook solutions crumble under friction.',
     skills: [
       'Situation Room Decision-Making',
       'Inter-Agency Disaster Logistics',
@@ -93,7 +93,7 @@ const DOMAINS = [
     ],
     simulation: 'District Administration Crisis War-Rooms & Civil Service Scenario Exercises.',
     image: adminImg,
-    imageCaption: 'Fig 4.1 — Emergency Administration & Tactical Inter-Agency Operations Desk.',
+    imageCaption: 'Plate 4.1 — Emergency Administration & Tactical Inter-Agency Operations Desk.',
     archivalCode: 'ZH-ADM-GOV-04',
   },
 ];
@@ -111,20 +111,20 @@ export default function FourDomains() {
           <div className="flex items-center gap-2 sm:gap-3">
             <span className="text-[#751a22] font-bold">03</span>
             <span className="text-slate-300">/</span>
-            <span>FOUR CORE DOMAINS // MAGAZINE SPREAD</span>
+            <span>FOUR CORE DISCIPLINES // MAGAZINE SPREAD</span>
           </div>
           <div className="text-[#751a22] font-semibold">
-            CHAPTER {activeDomain.number} OF 04
+            DISCIPLINE {activeDomain.number} OF 04
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-8 sm:mb-12">
           <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
-            Four Arenas of <span className="italic text-[#751a22]">Experiential Rigor</span>
+            Four Arenas of <span className="italic text-[#751a22]">Sovereign Statecraft</span>
           </h2>
           <p className="font-sans text-xs sm:text-base text-[#475569] mt-2 max-w-2xl">
-            Each domain is structured as an institutional proving ground designed to build practical mastery.
+            Each discipline is structured as an institutional proving ground designed to cultivate analytical mastery, forensic advocacy, and executive resolve.
           </p>
         </div>
 
@@ -170,7 +170,7 @@ export default function FourDomains() {
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4 sm:pb-6 mb-6 sm:mb-8">
               <div className="flex items-center gap-2 sm:gap-3">
                 <span className="px-2.5 py-0.5 bg-[#751a22] text-white font-mono text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold shadow-sm rounded-sm">
-                  DOMAIN {activeDomain.number}
+                  DISCIPLINE {activeDomain.number}
                 </span>
                 <span className="font-mono text-[10px] sm:text-xs text-[#475569] tracking-wider uppercase truncate font-medium">
                   {activeDomain.category}
@@ -213,7 +213,7 @@ export default function FourDomains() {
                 {/* Simulation Crucible Note */}
                 <div className="p-3.5 sm:p-4 bg-slate-50 border border-slate-200 font-mono text-[11px] sm:text-xs text-[#475569] rounded-sm">
                   <span className="text-[#0f172a] font-bold uppercase block mb-1">
-                    Crucible Environment:
+                    Crucible Arena:
                   </span>
                   <span className="text-[#334155]">{activeDomain.simulation}</span>
                 </div>

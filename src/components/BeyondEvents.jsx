@@ -5,43 +5,43 @@ import { BookOpen, Flag, Coffee, Sparkles, ArrowRight, Shield } from 'lucide-rea
 const ECOSYSTEM = [
   {
     number: '01',
-    title: 'WORKSHOPS',
-    tagline: 'INTENSIVE METHODOLOGICAL DRILLS',
+    title: 'THE FORENSIC MASTERCLASSES',
+    tagline: 'METHODOLOGICAL SPRINTS & ANALYTICAL RIGOR',
     icon: BookOpen,
     description:
-      'High-frequency, precision masterclasses focusing on forensic research, crisis resolution drafting, British Parliamentary argumentation, and data-driven policy briefs. Led by senior members and seasoned practitioners.',
-    deliverable: 'Methodology Dossiers & Live Execution Sprints',
-    frequency: 'Bi-Weekly Crucible',
+      'High-frequency, precision laboratories dedicated to deconstructing treaty syntax, British Parliamentary adjudications, statutory drafting, and empirical policy evaluation. Led by seasoned adjudicators and senior fellows.',
+    deliverable: 'Methodology Whitepapers & Live Adversarial Sprints',
+    frequency: 'Fortnightly Laboratory',
   },
   {
     number: '02',
-    title: 'FLAGSHIP EXPERIENCES',
-    tagline: 'NATIONAL-SCALE CRISIS SUMMITS',
+    title: 'CONVOCATIONS OF STATECRAFT',
+    tagline: 'FLAGSHIP NATIONAL CRISIS CONCLAVES',
     icon: Flag,
     description:
-      'Premier inter-institutional convocations bringing together top-tier delegates and debaters nationwide. Features multi-committee interconnected crisis simulations with dynamic real-time geopolitical variables.',
-    deliverable: 'National Security Council & Joint Crisis Sim',
-    frequency: 'Bi-Annual Summit',
+      'Premier inter-collegiate symposia convening top-tier delegates and parliamentary orators nationwide. Features interconnected multi-cabinet joint crisis environments with dynamic, real-time geopolitical and macroeconomic perturbations.',
+    deliverable: 'Joint Crisis Cabinets & National Security Assemblies',
+    frequency: 'Biannual Plenary',
   },
   {
     number: '03',
-    title: 'COFFEE WITH ZERO HOUR',
-    tagline: 'CLOSED-DOOR PRACTITIONER DIALOGUES',
+    title: 'CHATHAM HOUSE COLLOQUIUMS',
+    tagline: 'OFF-THE-RECORD PRACTITIONER ENCLAVES',
     icon: Coffee,
     description:
-      'Intimate, off-the-record roundtables conducted under Chatham House Rule with career ambassadors, public policy directors, constitutional advocates, and civil servants. Frank insights into actual statecraft.',
-    deliverable: 'Chatham House Roundtables (15 delegates max)',
-    frequency: 'Monthly Intellectual Session',
+      'Intimate, strictly confidential roundtables convened under the Chatham House Rule with career ambassadors, constitutional jurists, senior civil servants, and think-tank directors. Unvarnished exposure to actual statecraft.',
+    deliverable: 'Confidential Roundtables (Strict Limit: 15 Fellows)',
+    frequency: 'Monthly Enclave',
   },
   {
     number: '04',
-    title: 'ZERO HOUR FEST',
-    tagline: 'THE ANNUAL CELEBRATION OF STATECRAFT',
+    title: 'THE ANNUAL CAPSTONE SYMPOSIUM',
+    tagline: 'THE PAN-COLLEGIATE FESTIVAL OF GOVERNANCE',
     icon: Sparkles,
     description:
-      'The signature multi-disciplinary festival where diplomacy, debate, policy hackathons, and governance crisis rooms collide. An expansive celebration of critical thinking, rhetoric, and youth leadership.',
-    deliverable: 'All-Domain Convocations & Policy Exhibition',
-    frequency: 'Annual Capstone',
+      'The signature multidisciplinary congregation where diplomatic councils, parliamentary chambers, policy hackathons, and administrative crisis rooms converge in an exhaustive celebration of public leadership.',
+    deliverable: 'Plenary Chambers, Policy Exhibitions & Laureates',
+    frequency: 'Annual Capstone Conclave',
   },
 ];
 

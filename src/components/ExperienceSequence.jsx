@@ -4,51 +4,51 @@ import { motion, AnimatePresence } from 'framer-motion';
 const STAGES = [
   {
     step: '01',
-    word: 'RESEARCH',
-    mandate: 'Forensic Investigation of Primary Sources',
+    word: 'INQUIRY',
+    mandate: 'Forensic Exegesis of Primary Doctrine',
     summary:
-      'Before stepping onto any floor, rigorous investigation begins. You deconstruct statutory precedents, geopolitical whitepapers, macroeconomic indicators, and historical treaties. You do not rely on summaries—you evaluate primary materials to uncover structural leverage.',
-    quote: 'He who controls the evidentiary baseline defines the perimeter of debate.',
+      'Before entering any chamber, rigorous evidentiary interrogation begins. Delegates deconstruct statutory statutes, unredacted treaties, macroeconomic balance sheets, and diplomatic cables. In Zero Hour, secondary commentary is discarded in favor of unvarnished primary evidence.',
+    quote: 'Scientia potentia est — He who establishes the evidentiary baseline commands the perimeter of debate.',
   },
   {
     step: '02',
-    word: 'THINK',
-    mandate: 'Strategic Synthesis Under Scrutiny',
+    word: 'SYNTHESIS',
+    mandate: 'Dialectical Architecture Under Adversarial Pressure',
     summary:
-      'Information without architecture collapses under adversarial pressure. In this stage, you synthesize variables, map out decision branches, identify non-negotiable thresholds, and anticipate opposing strategies before speaking.',
-    quote: 'Rhetoric without structured reasoning is merely noise.',
+      'Raw intelligence without conceptual structure collapses in contested arenas. In this phase, delegates construct logical syllogisms, stress-test vulnerability vectors, and preempt opposing counter-arguments through rigorous dialectical synthesis.',
+    quote: 'Rhetoric stripped of structural validity is merely ornamental noise.',
   },
   {
     step: '03',
-    word: 'SPEAK',
-    mandate: 'Forensic Oratory & Persuasive Cadence',
+    word: 'DISCOURSE',
+    mandate: 'Parliamentary Oratory & Forensic Cadence',
     summary:
-      'You step to the podium. In front of an adversarial chamber, you deliver precise, authoritative arguments under strict time limits, mastering cadence and composure while withstanding immediate cross-examination.',
-    quote: 'Clarity of thought produces authority of speech.',
+      'Stepping to the dispatch box or podium. Facing a skeptical, adversarial floor under stringent temporal constraints, delegates command cadence, deliver substantiated arguments, and withstand unscripted cross-examination without deflection.',
+    quote: 'Clarity of intellect produces undeniable sovereignty of speech.',
   },
   {
     step: '04',
-    word: 'NEGOTIATE',
-    mandate: 'Multilateral Coalition & Consensus Building',
+    word: 'CONCILIATION',
+    mandate: 'Multilateral Diplomacy & Coalition Architecture',
     summary:
-      'Public speeches define intent, but negotiations determine outcome. You navigate competing sovereign interests, balance concessions against non-negotiable boundaries, and draft operative clauses that reconcile divided factions.',
-    quote: 'Diplomacy is the art of aligning divergent sovereign interests.',
+      'While public speeches delineate national posture, bilateral diplomacy dictates treaty survival. Delegates navigate zero-sum incentives, engineer operative compromise without ideological surrender, and assemble durable majoritarian voting coalitions.',
+    quote: 'Diplomacy is the calculated alignment of divergent sovereign imperatives.',
   },
   {
     step: '05',
-    word: 'DECIDE',
-    mandate: 'Executive Commitment in Ambiguity',
+    word: 'ARBITRATION',
+    mandate: 'Executive Prerogative in Radical Ambiguity',
     summary:
-      'When time expires and complete certainty is impossible, analysis must convert into action. You cast decisive votes, sign emergency resolutions, and accept full operational responsibility for the outcome.',
-    quote: 'In moments of crisis, the refusal to decide is itself a decision.',
+      'When the countdown expires and perfect information remains unattainable, analysis yields to irreversible commitment. Delegates cast defining votes, authorize emergency directives, and shoulder personal culpability for systemic outcomes.',
+    quote: 'In moments of institutional crisis, abdication of choice is itself the gravest verdict.',
   },
   {
     step: '06',
-    word: 'LEAD',
-    mandate: 'Institutional Stewardship & Responsibility',
+    word: 'STEWARDSHIP',
+    mandate: 'Institutional Custodianship & Moral Accountability',
     summary:
-      'Leadership is the culmination of the crucible. You coordinate teams under operational pressure, maintain institutional integrity, and take personal accountability for collective outcomes.',
-    quote: 'True leadership is measured by the responsibility one assumes when the outcome is uncertain.',
+      'The apex of civic leadership. Delegates transcend factional allegiance to maintain procedural integrity, guide interdisciplinary working bodies through operational strain, and preserve institutional continuity for successor cohorts.',
+    quote: 'Authority is not measured by office, but by the magnitude of consequence one is willing to endure.',
   },
 ];
 
@@ -75,10 +75,10 @@ export default function ExperienceSequence() {
         {/* Section Headline */}
         <div className="mb-14">
           <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
-            The Experiential <span className="italic text-[#751a22]">Sequence</span>
+            The Dialectical <span className="italic text-[#751a22]">Sequence</span>
           </h2>
           <p className="font-sans text-sm sm:text-base text-[#475569] mt-2 max-w-2xl">
-            Every simulation, debate chamber, and crisis cabinet follows this six-stage intellectual progression.
+            Every simulation chamber, parliamentary caucus, and executive crisis room conforms to this six-stage intellectual progression.
           </p>
         </div>
 
