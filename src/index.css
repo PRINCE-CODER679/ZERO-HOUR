@@ -5,23 +5,24 @@
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   
-  --color-canvas: #f8fafc;
-  --color-canvas-subtle: #f1f5f9;
+  --color-canvas: #faf8f5;
+  --color-canvas-subtle: #f4f0e8;
   --color-surface: #ffffff;
   --color-surface-elevated: #ffffff;
   
-  --color-crimson: #751a22;
-  --color-crimson-bright: #9e232b;
-  --color-crimson-dark: #581218;
-  --color-crimson-tint: rgba(117, 26, 34, 0.05);
+  --color-crimson: #7b1824;
+  --color-crimson-bright: #9e2333;
+  --color-crimson-dark: #540e17;
+  --color-crimson-tint: rgba(123, 24, 36, 0.05);
   
-  --color-gold: #c59b51;
-  --color-gold-light: #dfba78;
-  --color-gold-dim: #997230;
+  --color-gold: #c29236;
+  --color-gold-light: #e0b86a;
+  --color-gold-dim: #997126;
+  --color-gold-subtle: #fcf8f0;
   
-  --color-ink: #0f172a;
-  --color-ink-muted: #475569;
-  --color-ink-dim: #64748b;
+  --color-ink: #0e141e;
+  --color-ink-muted: #3e4856;
+  --color-ink-dim: #687383;
 }
 
 @layer base {
@@ -33,8 +34,8 @@
   }
   
   body {
-    background-color: #f8fafc;
-    color: #0f172a;
+    background-color: #faf8f5;
+    color: #0e141e;
     font-family: var(--font-sans);
     letter-spacing: -0.01em;
     overflow-x: hidden;
@@ -49,14 +50,14 @@
     height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #f8fafc;
+    background: #faf8f5;
   }
   ::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
+    background: #d6cfc4;
     border-radius: 2px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #751a22;
+    background: #7b1824;
   }
 }
 
@@ -67,15 +68,15 @@
 
 /* Hairline rule utility */
 .border-hairline {
-  border-color: rgba(226, 232, 240, 0.9);
+  border-color: rgba(229, 223, 213, 0.9);
 }
 
 .border-hairline-gold {
-  border-color: rgba(197, 155, 81, 0.3);
+  border-color: rgba(194, 146, 54, 0.4);
 }
 
 .border-hairline-crimson {
-  border-color: rgba(117, 26, 34, 0.25);
+  border-color: rgba(123, 24, 36, 0.3);
 }
 
 /* Editorial Text Balance */
@@ -101,7 +102,7 @@
 
 /* Custom selection and typography */
 ::selection {
-  background-color: #751a22;
+  background-color: #7b1824;
   color: #ffffff;
 }
 

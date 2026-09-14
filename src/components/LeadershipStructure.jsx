@@ -75,28 +75,28 @@ export default function LeadershipStructure() {
   const [expandedTier, setExpandedTier] = useState(null);
 
   return (
-    <section id="leadership" className="py-16 sm:py-24 bg-[#f8fafc] border-b border-slate-200 relative bg-grain">
+    <section id="leadership" className="py-16 sm:py-24 bg-[#faf8f5] border-b border-[#e5dfd5] relative bg-grain">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Meta */}
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-3 sm:pb-4 mb-8 font-mono text-[10px] sm:text-[11px] text-[#64748b] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#e5dfd5] pb-3 sm:pb-4 mb-8 font-mono text-[10px] sm:text-[11px] text-[#7a8595] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="text-[#751a22] font-bold">09</span>
-            <span className="text-slate-300">/</span>
+            <span className="text-[#7b1824] font-bold">09</span>
+            <span className="text-[#d8cfc2]">/</span>
             <span>ORGANISATIONAL GOVERNANCE & ACCOUNTABILITY</span>
           </div>
-          <div className="text-[#751a22] font-semibold">
+          <div className="text-[#7b1824] font-semibold">
             STRUCTURAL TREE
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-10 sm:mb-14">
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
             Structure of Responsibility. <br />
-            <span className="italic text-[#751a22]">Accountability Over Bureaucracy.</span>
+            <span className="italic text-[#7b1824]">Accountability Over Bureaucracy.</span>
           </h2>
-          <p className="font-sans text-xs sm:text-base text-[#475569] mt-2 max-w-2xl">
+          <p className="font-sans text-xs sm:text-base text-[#5c6776] mt-2 max-w-2xl">
             Our organisational model is designed around clear lines of ownership. Every role exists to serve the experiential development of the student body.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function LeadershipStructure() {
         <div className="max-w-4xl mx-auto space-y-2.5 sm:space-y-3 relative">
           
           {/* Vertical Connecting Hairline Rule */}
-          <div className="hidden sm:block absolute left-8 top-8 bottom-8 w-px bg-gradient-to-b from-[#751a22] via-slate-300 to-transparent z-0" />
+          <div className="hidden sm:block absolute left-8 top-8 bottom-8 w-px bg-gradient-to-b from-[#7b1824] via-[#e5dfd5] to-transparent z-0" />
 
           {STRUCTURE.map((item, idx) => {
             const isExpanded = expandedTier === idx;
@@ -114,8 +114,8 @@ export default function LeadershipStructure() {
                 key={item.role}
                 className={`relative z-10 border transition-all duration-200 rounded-sm ${
                   isExpanded
-                    ? 'bg-white border-[#751a22] shadow-lg ring-1 ring-[#751a22]/25'
-                    : 'bg-white border-slate-200 hover:border-slate-300'
+                    ? 'bg-white border-[#7b1824] shadow-lg ring-1 ring-[#c29236]/25'
+                    : 'bg-white border-[#e5dfd5] hover:border-[#c29236]/60'
                 }`}
               >
                 <div
@@ -123,26 +123,26 @@ export default function LeadershipStructure() {
                   className="p-4 sm:p-6 cursor-pointer flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4"
                 >
                   <div className="flex items-center gap-3 sm:gap-6">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-slate-50 border border-slate-200 flex items-center justify-center font-mono text-[11px] sm:text-xs font-bold text-[#751a22] shrink-0 shadow-sm rounded-sm">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#faf8f5] border border-[#e5dfd5] flex items-center justify-center font-mono text-[11px] sm:text-xs font-bold text-[#7b1824] shrink-0 shadow-sm rounded-sm">
                       {item.tier}
                     </div>
 
                     <div>
-                      <div className="font-mono text-[8px] sm:text-[9px] uppercase tracking-widest text-[#64748b] font-semibold">
+                      <div className="font-mono text-[8px] sm:text-[9px] uppercase tracking-widest text-[#7a8595] font-semibold">
                         {item.category}
                       </div>
-                      <h3 className="font-serif text-lg sm:text-2xl font-bold uppercase tracking-tight text-[#0f172a]">
+                      <h3 className="font-serif text-lg sm:text-2xl font-bold uppercase tracking-tight text-[#0e141e]">
                         {item.role}
                       </h3>
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6 border-t sm:border-t-0 pt-2 sm:pt-0 border-slate-100">
-                    <div className="font-mono text-[11px] sm:text-xs text-[#334155] text-left sm:text-right max-w-xs truncate font-medium">
-                      <span className="text-[#64748b] text-[9px] sm:text-[10px] block sm:inline mr-1.5 font-normal">ACCOUNTABILITY:</span>
+                  <div className="flex items-center justify-between sm:justify-end gap-4 sm:gap-6 border-t sm:border-t-0 pt-2 sm:pt-0 border-[#e5dfd5]/60">
+                    <div className="font-mono text-[11px] sm:text-xs text-[#3e4856] text-left sm:text-right max-w-xs truncate font-medium">
+                      <span className="text-[#7a8595] text-[9px] sm:text-[10px] block sm:inline mr-1.5 font-normal">ACCOUNTABILITY:</span>
                       <span className="truncate">{item.accountability}</span>
                     </div>
-                    <ChevronDown className={`w-4 h-4 text-[#64748b] shrink-0 transition-transform ${isExpanded ? 'rotate-180 text-[#751a22]' : ''}`} />
+                    <ChevronDown className={`w-4 h-4 text-[#7a8595] shrink-0 transition-transform ${isExpanded ? 'rotate-180 text-[#7b1824]' : ''}`} />
                   </div>
                 </div>
 
@@ -150,15 +150,15 @@ export default function LeadershipStructure() {
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
-                    className="border-t border-slate-200 bg-slate-50/90 p-4 sm:p-8"
+                    className="border-t border-[#e5dfd5] bg-[#faf8f5] p-4 sm:p-8"
                   >
-                    <div className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#751a22] font-bold mb-2.5 sm:mb-3">
+                    <div className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#7b1824] font-bold mb-2.5 sm:mb-3">
                       Constitutional Responsibilities & Duties
                     </div>
-                    <ul className="space-y-2 font-sans text-xs sm:text-sm text-[#334155]">
+                    <ul className="space-y-2 font-sans text-xs sm:text-sm text-[#3e4856]">
                       {item.duties.map((duty, dIdx) => (
                         <li key={dIdx} className="flex items-start gap-2.5 sm:gap-3">
-                          <CheckCircle2 className="w-4 h-4 text-[#751a22] shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-4 h-4 text-[#7b1824] shrink-0 mt-0.5" />
                           <span>{duty}</span>
                         </li>
                       ))}

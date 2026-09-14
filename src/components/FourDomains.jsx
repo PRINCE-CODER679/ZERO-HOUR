@@ -103,33 +103,33 @@ export default function FourDomains() {
   const activeDomain = DOMAINS[activeTab];
 
   return (
-    <section id="domains" className="py-16 sm:py-24 bg-[#f8fafc] border-b border-slate-200 relative bg-grain">
+    <section id="domains" className="py-16 sm:py-24 bg-[#faf8f5] border-b border-[#e5dfd5] relative bg-grain">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Meta */}
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-3 sm:pb-4 mb-8 font-mono text-[10px] sm:text-[11px] text-[#64748b] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#e5dfd5] pb-3 sm:pb-4 mb-8 font-mono text-[10px] sm:text-[11px] text-[#7a8595] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="text-[#751a22] font-bold">03</span>
-            <span className="text-slate-300">/</span>
+            <span className="text-[#7b1824] font-bold">03</span>
+            <span className="text-[#d8cfc2]">/</span>
             <span>FOUR CORE DISCIPLINES // MAGAZINE SPREAD</span>
           </div>
-          <div className="text-[#751a22] font-semibold">
+          <div className="text-[#7b1824] font-semibold">
             DISCIPLINE {activeDomain.number} OF 04
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
-            Four Arenas of <span className="italic text-[#751a22]">Sovereign Statecraft</span>
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
+            Four Arenas of <span className="italic text-[#7b1824]">Sovereign Statecraft</span>
           </h2>
-          <p className="font-sans text-xs sm:text-base text-[#475569] mt-2 max-w-2xl">
+          <p className="font-sans text-xs sm:text-base text-[#5c6776] mt-2 max-w-2xl">
             Each discipline is structured as an institutional proving ground designed to cultivate analytical mastery, forensic advocacy, and executive resolve.
           </p>
         </div>
 
         {/* Chapter Index Navigation Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8 sm:mb-12 border-b border-slate-200 pb-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-8 sm:mb-12 border-b border-[#e5dfd5] pb-3">
           {DOMAINS.map((domain, index) => {
             const isSelected = activeTab === index;
             return (
@@ -138,17 +138,17 @@ export default function FourDomains() {
                 onClick={() => setActiveTab(index)}
                 className={`text-left p-3 sm:p-4 transition-all duration-200 border-l-2 rounded-sm ${
                   isSelected
-                    ? 'border-[#751a22] bg-white text-[#0f172a] shadow-sm'
-                    : 'border-transparent bg-transparent text-[#64748b] hover:text-[#0f172a] hover:bg-slate-100/70'
+                    ? 'border-[#7b1824] bg-white text-[#0e141e] shadow-sm ring-1 ring-[#c29236]/20'
+                    : 'border-transparent bg-transparent text-[#7a8595] hover:text-[#0e141e] hover:bg-[#f4f0e8]'
                 }`}
               >
-                <div className="font-mono text-[9px] sm:text-[10px] text-[#751a22] font-bold tracking-widest mb-0.5 sm:mb-1">
+                <div className="font-mono text-[9px] sm:text-[10px] text-[#7b1824] font-bold tracking-widest mb-0.5 sm:mb-1">
                   DOM // {domain.number}
                 </div>
                 <div className="font-serif text-base sm:text-lg font-bold tracking-wide uppercase truncate">
                   {domain.title}
                 </div>
-                <div className="font-mono text-[8px] sm:text-[9px] text-[#64748b] uppercase tracking-wider truncate mt-0.5 hidden xs:block">
+                <div className="font-mono text-[8px] sm:text-[9px] text-[#7a8595] uppercase tracking-wider truncate mt-0.5 hidden xs:block">
                   {domain.subtitle}
                 </div>
               </button>
@@ -164,20 +164,20 @@ export default function FourDomains() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.35 }}
-            className="bg-white border border-slate-200 p-5 sm:p-8 lg:p-12 shadow-xl relative rounded-sm"
+            className="bg-white border border-[#e5dfd5] p-5 sm:p-8 lg:p-12 shadow-xl relative rounded-sm ring-1 ring-[#c29236]/15"
           >
             {/* Editorial Archival Tag Top Right */}
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4 sm:pb-6 mb-6 sm:mb-8">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#e5dfd5] pb-4 sm:pb-6 mb-6 sm:mb-8">
               <div className="flex items-center gap-2 sm:gap-3">
-                <span className="px-2.5 py-0.5 bg-[#751a22] text-white font-mono text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold shadow-sm rounded-sm">
+                <span className="px-2.5 py-0.5 bg-[#7b1824] text-white font-mono text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold shadow-sm rounded-sm">
                   DISCIPLINE {activeDomain.number}
                 </span>
-                <span className="font-mono text-[10px] sm:text-xs text-[#475569] tracking-wider uppercase truncate font-medium">
+                <span className="font-mono text-[10px] sm:text-xs text-[#5c6776] tracking-wider uppercase truncate font-medium">
                   {activeDomain.category}
                 </span>
               </div>
-              <div className="font-mono text-[10px] sm:text-[11px] text-[#64748b] tracking-widest uppercase">
-                REF: <span className="text-[#0f172a] font-semibold">{activeDomain.archivalCode}</span>
+              <div className="font-mono text-[10px] sm:text-[11px] text-[#7a8595] tracking-widest uppercase">
+                REF: <span className="text-[#0e141e] font-semibold">{activeDomain.archivalCode}</span>
               </div>
             </div>
 
@@ -187,50 +187,50 @@ export default function FourDomains() {
               {/* Left Column */}
               <div className="lg:col-span-6 space-y-6 sm:space-y-8">
                 <div>
-                  <h3 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-bold">
+                  <h3 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-bold">
                     {activeDomain.title}
                   </h3>
-                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#751a22] mt-1 font-bold">
+                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#7b1824] mt-1 font-bold">
                     {activeDomain.subtitle}
                   </div>
                 </div>
 
                 {/* Central Provocative Question */}
-                <div className="p-4 sm:p-6 bg-slate-50 border-l-4 border-[#751a22] border-y border-r border-slate-200 rounded-r-sm">
-                  <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#64748b] block mb-2 font-semibold">
+                <div className="p-4 sm:p-6 bg-[#faf8f5] border-l-4 border-[#7b1824] border-y border-r border-[#e5dfd5] rounded-r-sm">
+                  <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#7a8595] block mb-2 font-semibold">
                     The Central Inquiry
                   </span>
-                  <blockquote className="font-serif italic text-lg sm:text-2xl text-[#0f172a] leading-snug">
+                  <blockquote className="font-serif italic text-lg sm:text-2xl text-[#0e141e] leading-snug">
                     "{activeDomain.question}"
                   </blockquote>
                 </div>
 
                 {/* Narrative Description */}
-                <div className="space-y-3 text-[#334155] font-sans text-sm sm:text-base leading-relaxed">
+                <div className="space-y-3 text-[#3e4856] font-sans text-sm sm:text-base leading-relaxed">
                   <p>{activeDomain.description}</p>
                 </div>
 
                 {/* Simulation Crucible Note */}
-                <div className="p-3.5 sm:p-4 bg-slate-50 border border-slate-200 font-mono text-[11px] sm:text-xs text-[#475569] rounded-sm">
-                  <span className="text-[#0f172a] font-bold uppercase block mb-1">
+                <div className="p-3.5 sm:p-4 bg-[#faf8f5] border border-[#e5dfd5] font-mono text-[11px] sm:text-xs text-[#5c6776] rounded-sm">
+                  <span className="text-[#0e141e] font-bold uppercase block mb-1">
                     Crucible Arena:
                   </span>
-                  <span className="text-[#334155]">{activeDomain.simulation}</span>
+                  <span className="text-[#3e4856]">{activeDomain.simulation}</span>
                 </div>
 
                 {/* Core Applied Competencies */}
                 <div>
-                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-[#64748b] mb-3 flex items-center gap-2 font-semibold">
-                    <span className="w-1.5 h-1.5 bg-[#751a22]"></span>
+                  <div className="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-[#7a8595] mb-3 flex items-center gap-2 font-semibold">
+                    <span className="w-1.5 h-1.5 bg-[#7b1824]"></span>
                     Core Applied Competencies
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {activeDomain.skills.map((skill) => (
                       <div
                         key={skill}
-                        className="flex items-center gap-2 p-2.5 bg-slate-50 border border-slate-200 text-[11px] sm:text-xs font-mono text-[#0f172a] font-medium rounded-sm"
+                        className="flex items-center gap-2 p-2.5 bg-[#faf8f5] border border-[#e5dfd5] text-[11px] sm:text-xs font-mono text-[#0e141e] font-medium rounded-sm"
                       >
-                        <Check className="w-3.5 h-3.5 text-[#751a22] shrink-0" />
+                        <Check className="w-3.5 h-3.5 text-[#7b1824] shrink-0" />
                         <span className="truncate">{skill}</span>
                       </div>
                     ))}

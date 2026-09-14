@@ -57,33 +57,33 @@ export default function ExperienceSequence() {
   const current = STAGES[activeIdx];
 
   return (
-    <section id="experience" className="py-24 bg-white border-b border-slate-200 relative bg-grain">
+    <section id="experience" className="py-24 bg-[#faf8f5] border-b border-[#e5dfd5] relative bg-grain">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Meta */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-10 font-mono text-[11px] text-[#64748b] uppercase tracking-[0.25em]">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#e5dfd5] pb-4 mb-10 font-mono text-[11px] text-[#7a8595] uppercase tracking-[0.25em]">
           <div className="flex items-center gap-3">
-            <span className="text-[#751a22] font-bold">04</span>
-            <span className="text-slate-300">/</span>
+            <span className="text-[#7b1824] font-bold">04</span>
+            <span className="text-[#d8cfc2]">/</span>
             <span>THE CORE METHODOLOGY</span>
           </div>
-          <div className="text-[#751a22] font-semibold">
+          <div className="text-[#7b1824] font-semibold">
             SEQUENCE {current.step} / 06
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-14">
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
-            The Dialectical <span className="italic text-[#751a22]">Sequence</span>
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
+            The Dialectical <span className="italic text-[#7b1824]">Sequence</span>
           </h2>
-          <p className="font-sans text-sm sm:text-base text-[#475569] mt-2 max-w-2xl">
+          <p className="font-sans text-sm sm:text-base text-[#5c6776] mt-2 max-w-2xl">
             Every simulation chamber, parliamentary caucus, and executive crisis room conforms to this six-stage intellectual progression.
           </p>
         </div>
 
         {/* Sequence Selector Track */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mb-12 border-b border-slate-200 pb-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mb-12 border-b border-[#e5dfd5] pb-4">
           {STAGES.map((stg, i) => {
             const isActive = activeIdx === i;
             return (
@@ -92,11 +92,11 @@ export default function ExperienceSequence() {
                 onClick={() => setActiveIdx(i)}
                 className={`p-4 text-left transition-all duration-200 border-l-2 rounded-sm ${
                   isActive
-                    ? 'bg-slate-50 border-[#751a22] text-[#0f172a] shadow-sm'
-                    : 'bg-transparent border-transparent text-[#64748b] hover:text-[#0f172a] hover:bg-slate-50'
+                    ? 'bg-white border-[#7b1824] text-[#0e141e] shadow-sm ring-1 ring-[#c29236]/20'
+                    : 'bg-transparent border-transparent text-[#7a8595] hover:text-[#0e141e] hover:bg-[#f4f0e8]'
                 }`}
               >
-                <div className="font-mono text-[10px] text-[#751a22] font-bold mb-1">
+                <div className="font-mono text-[10px] text-[#7b1824] font-bold mb-1">
                   PHASE // {stg.step}
                 </div>
                 <div className="font-serif text-base sm:text-lg uppercase tracking-tight font-bold">
@@ -115,35 +115,35 @@ export default function ExperienceSequence() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
-            className="bg-slate-50/70 border border-slate-200 p-8 sm:p-12 shadow-lg rounded-sm"
+            className="bg-white border border-[#e5dfd5] p-8 sm:p-12 shadow-xl rounded-sm ring-1 ring-[#c29236]/15"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
               
               {/* Left: Phase Title & Narrative */}
               <div className="lg:col-span-8 space-y-6">
                 <div>
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-[#64748b] mb-1 font-medium">
+                  <div className="font-mono text-[10px] uppercase tracking-widest text-[#7a8595] mb-1 font-medium">
                     PHASE {current.step} DISCIPLINE
                   </div>
-                  <h3 className="font-serif text-4xl sm:text-5xl text-[#0f172a] uppercase font-bold tracking-tight">
+                  <h3 className="font-serif text-4xl sm:text-5xl text-[#0e141e] uppercase font-bold tracking-tight">
                     {current.word}
                   </h3>
-                  <div className="font-mono text-xs uppercase tracking-wider text-[#751a22] mt-2 font-bold">
+                  <div className="font-mono text-xs uppercase tracking-wider text-[#7b1824] mt-2 font-bold">
                     {current.mandate}
                   </div>
                 </div>
 
-                <p className="text-base sm:text-lg text-[#334155] font-sans leading-relaxed">
+                <p className="text-base sm:text-lg text-[#3e4856] font-sans leading-relaxed">
                   {current.summary}
                 </p>
               </div>
 
               {/* Right: Axiom */}
-              <div className="lg:col-span-4 border-l border-slate-200 pl-6 lg:pl-8 py-2">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-[#64748b] block mb-3 font-semibold">
+              <div className="lg:col-span-4 border-l border-[#e5dfd5] pl-6 lg:pl-8 py-2">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-[#c29236] block mb-3 font-semibold">
                   Foundational Maxim
                 </span>
-                <blockquote className="font-serif italic text-xl text-[#751a22] leading-snug">
+                <blockquote className="font-serif italic text-xl text-[#7b1824] leading-snug">
                   "{current.quote}"
                 </blockquote>
               </div>

@@ -20,7 +20,7 @@ export default function App() {
   const handleCloseJoin = () => setJoinModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-[#0f172a] selection:bg-[#751a22] selection:text-white font-sans overflow-x-hidden antialiased">
+    <div className="min-h-screen bg-[#faf8f5] text-[#0e141e] selection:bg-[#7b1824] selection:text-white font-sans overflow-x-hidden antialiased">
       {/* Editorial Navigation */}
       <Navbar onOpenJoin={handleOpenJoin} />
 

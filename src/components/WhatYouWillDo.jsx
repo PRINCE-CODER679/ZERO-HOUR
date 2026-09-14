@@ -65,27 +65,27 @@ export default function WhatYouWillDo() {
   const activeAction = ACTIONS[activeIdx];
 
   return (
-    <section id="actions" className="py-24 bg-[#f8fafc] border-b border-slate-200 relative bg-grain">
+    <section id="actions" className="py-24 bg-[#faf8f5] border-b border-[#e5dfd5] relative bg-grain">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header Meta */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-10 font-mono text-[11px] text-[#64748b] uppercase tracking-[0.25em]">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#e5dfd5] pb-4 mb-10 font-mono text-[11px] text-[#7a8595] uppercase tracking-[0.25em]">
           <div className="flex items-center gap-3">
-            <span className="text-[#751a22] font-bold">05</span>
-            <span className="text-slate-300">/</span>
+            <span className="text-[#7b1824] font-bold">05</span>
+            <span className="text-[#d8cfc2]">/</span>
             <span>APPLIED PRACTICE // WHAT WILL YOU ACTUALLY DO?</span>
           </div>
-          <div className="text-[#751a22] font-semibold">
+          <div className="text-[#7b1824] font-semibold">
             EIGHT CORE DISCIPLINES
           </div>
         </div>
 
         {/* Section Editorial Headline */}
         <div className="mb-14">
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#0f172a] uppercase tracking-tight font-normal">
-            Direct Practice. <span className="italic text-[#751a22]">No Passive Theory.</span>
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
+            Direct Practice. <span className="italic text-[#7b1824]">No Passive Theory.</span>
           </h2>
-          <p className="font-sans text-sm sm:text-base text-[#475569] mt-2 max-w-2xl">
+          <p className="font-sans text-sm sm:text-base text-[#5c6776] mt-2 max-w-2xl">
             Members engage in concrete simulations every week. Select any discipline to review its institutional application.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function WhatYouWillDo() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Left Column */}
-          <div className="lg:col-span-7 divide-y divide-slate-200 border-y border-slate-200">
+          <div className="lg:col-span-7 divide-y divide-[#e5dfd5] border-y border-[#e5dfd5]">
             {ACTIONS.map((action, idx) => {
               const isActive = activeIdx === idx;
               return (
@@ -103,16 +103,16 @@ export default function WhatYouWillDo() {
                   onClick={() => setActiveIdx(idx)}
                   onMouseEnter={() => setActiveIdx(idx)}
                   className={`py-4 sm:py-5 px-3 cursor-pointer transition-all duration-200 flex items-center justify-between group rounded-sm ${
-                    isActive ? 'bg-white shadow-sm border-l-2 border-[#751a22]' : 'hover:bg-white/60'
+                    isActive ? 'bg-white shadow-sm border-l-2 border-[#7b1824] ring-1 ring-[#c29236]/20' : 'hover:bg-[#f4f0e8]/70'
                   }`}
                 >
                   <div className="flex items-center gap-4 sm:gap-6">
-                    <span className={`font-mono text-xs ${isActive ? 'text-[#751a22] font-bold' : 'text-[#64748b]'}`}>
+                    <span className={`font-mono text-xs ${isActive ? 'text-[#7b1824] font-bold' : 'text-[#7a8595]'}`}>
                       {action.id}
                     </span>
                     <span
                       className={`font-serif text-lg sm:text-2xl uppercase tracking-tight transition-colors ${
-                        isActive ? 'text-[#0f172a] font-bold' : 'text-[#475569] group-hover:text-[#0f172a]'
+                        isActive ? 'text-[#0e141e] font-bold' : 'text-[#5c6776] group-hover:text-[#0e141e]'
                       }`}
                     >
                       {action.title}
@@ -120,7 +120,7 @@ export default function WhatYouWillDo() {
                   </div>
 
                   <span className={`font-mono text-[10px] uppercase tracking-wider hidden sm:inline ${
-                    isActive ? 'text-[#751a22] font-bold' : 'text-[#64748b]'
+                    isActive ? 'text-[#7b1824] font-bold' : 'text-[#7a8595]'
                   }`}>
                     {action.domain}
                   </span>
@@ -138,26 +138,26 @@ export default function WhatYouWillDo() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
-                className="bg-white border border-slate-200 p-6 sm:p-8 shadow-xl rounded-sm"
+                className="bg-white border border-[#e5dfd5] p-6 sm:p-8 shadow-xl rounded-sm ring-1 ring-[#c29236]/15"
               >
-                <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-6 font-mono text-[10px] text-[#64748b] uppercase tracking-widest">
+                <div className="flex items-center justify-between border-b border-[#e5dfd5] pb-4 mb-6 font-mono text-[10px] text-[#7a8595] uppercase tracking-widest">
                   <span>DISCIPLINE {activeAction.id}</span>
-                  <span className="text-[#751a22] font-bold">{activeAction.domain}</span>
+                  <span className="text-[#7b1824] font-bold">{activeAction.domain}</span>
                 </div>
 
-                <h3 className="font-serif text-2xl text-[#0f172a] uppercase mb-3 font-bold">
+                <h3 className="font-serif text-2xl text-[#0e141e] uppercase mb-3 font-bold">
                   {activeAction.title}
                 </h3>
 
-                <p className="text-sm text-[#334155] font-sans leading-relaxed mb-6">
+                <p className="text-sm text-[#3e4856] font-sans leading-relaxed mb-6">
                   {activeAction.context}
                 </p>
 
-                <div className="border-t border-slate-100 pt-4 space-y-2 bg-slate-50 p-4 border border-slate-200/80 rounded-sm">
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-[#64748b] font-semibold">
+                <div className="border-t border-[#e5dfd5] pt-4 space-y-2 bg-[#faf8f5] p-4 border border-[#e5dfd5] rounded-sm">
+                  <div className="font-mono text-[10px] uppercase tracking-widest text-[#7a8595] font-semibold">
                     Realistic Simulation Context:
                   </div>
-                  <p className="font-mono text-xs text-[#751a22] leading-relaxed font-medium">
+                  <p className="font-mono text-xs text-[#7b1824] leading-relaxed font-medium">
                     "{activeAction.scenario}"
                   </p>
                 </div>
