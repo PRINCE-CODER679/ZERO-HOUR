@@ -11,90 +11,90 @@ const DOMAINS = [
   {
     id: 'diplomacy',
     number: '01',
-    category: 'STATECRAFT & GEOPOLITICAL DIPLOMACY',
-    title: 'DIPLOMACY',
-    subtitle: 'MULTILATERAL STATECRAFT & CRISIS CONCLAVES',
-    question: 'When sovereign national imperatives collide in an escalating international emergency, how do you forge a legally binding treaty without conceding existential red lines?',
+    category: 'DIPLOMACY & GLOBAL AFFAIRS',
+    title: 'MODEL UNITED NATIONS',
+    subtitle: 'DIPLOMATIC SIMULATIONS & NEGOTIATION',
+    question: 'Can you negotiate when everyone in the room wants something different?',
     description:
-      'Immersive multilateral statecraft, bilateral conclaves, and emergency crisis committees. Delegates represent sovereign nation-states, navigate complex geopolitical intelligence dossiers, author operative clauses, and assemble decisive voting coalitions under extreme clock compression.',
+      'Students step into the world of international relations. You don’t merely learn about countries and global organisations—you represent them. You research national positions, negotiate with other delegates, form alliances, and draft real solutions.',
     skills: [
-      'Multilateral Statecraft',
-      'Bilateral Treaty Negotiation',
-      'Crisis Cabinet Command',
-      'Geopolitical Dossier Analysis',
-      'Coalition Bloc Architecture',
-      'Consensus Building',
+      'Research & Fact Verification',
+      'Diplomatic Negotiation',
+      'Public Speaking & Confidence',
+      'Alliance & Coalition Building',
+      'Formal Communication',
+      'Teamwork Under Pressure',
     ],
-    simulation: 'Simulated UN Security Council & Historical Crisis Cabinets with dynamic intelligence injects.',
+    simulation: 'Simulated UN committees, Security Council crisis cabinets, and bilateral treaty rounds.',
     image: diplomacyImg,
-    imageCaption: 'Plate 1.1 — Multilateral Summit & Security Council Deliberation Chamber.',
-    archivalCode: 'ZH-DIP-MUN-01',
+    imageCaption: 'Plate 1.1 — Model United Nations & Diplomatic Negotiation Chamber.',
+    archivalCode: 'ZH-MUN-01',
   },
   {
     id: 'debate',
     number: '02',
-    category: 'DIALECTICAL COMBAT & RHETORICAL DISCOURSE',
-    title: 'DEBATE',
-    subtitle: 'PARLIAMENTARY RHETORIC & ORAL ADVOCACY',
-    question: 'How do you dismantle a formidable adversary’s foundational premise in real time under strict procedural scrutiny while maintaining intellectual composure and commanding authority?',
+    category: 'DEBATE & CRITICAL THINKING',
+    title: 'PARLIAMENTARY DEBATE',
+    subtitle: 'OXFORD & PARLIAMENTARY FORMATS',
+    question: 'Can you defend your position when someone is actively trying to dismantle it?',
     description:
-      'Oxford-Union, British Parliamentary, and Asian Parliamentary formats engineered to sharpen cognitive velocity. Members engage in real-time argument deconstruction, rebuttal synthesis, points of information, and persuasive public advocacy on the most contentious constitutional and moral questions of our era.',
+      'Zero Hour creates structured spaces to argue ideas rather than personalities. Through Oxford-style and Parliamentary debates, participants learn how to construct clear arguments, spot logical fallacies, think on their feet, and listen actively.',
     skills: [
-      'Forensic Cross-Examination',
-      'Rhetorical Precision & Cadence',
-      'Cognitive Refutation Speed',
-      'First-Principles Argumentation',
-      'Parliamentary Procedure Mastery',
-      'Adversarial Poise',
+      'Argument Construction',
+      'Critical Thinking',
+      'Fast Rebuttal Speed',
+      'Public Speaking Delivery',
+      'Logical Reasoning',
+      'Active Listening',
     ],
-    simulation: 'Live Parliamentary chambers operating under 15-minute motion advisories and unscripted POI challenges.',
+    simulation: 'Oxford-Union and Parliamentary debates with 15-minute preparation times and live cross-examination.',
     image: debateImg,
-    imageCaption: 'Plate 2.1 — Oxford-Union Style Parliamentary Floor with Tiered Benches.',
-    archivalCode: 'ZH-DEB-DIS-02',
+    imageCaption: 'Plate 2.1 — Oxford-Union Style Parliamentary Debate Floor.',
+    archivalCode: 'ZH-DEB-02',
   },
   {
     id: 'policy',
     number: '03',
-    category: 'GOVERNANCE & SOCIO-ECONOMIC ARCHITECTURE',
-    title: 'POLICY',
-    subtitle: 'STATUTORY ANALYSIS & REGULATORY REFORM',
-    question: 'How do you translate volatile societal friction, macroeconomic constraints, and constitutional boundaries into durable, enforceable public legislation?',
+    category: 'GOVERNANCE & PUBLIC POLICY',
+    title: 'PUBLIC POLICY',
+    subtitle: 'POLICY ANALYSIS & REAL-WORLD PROBLEM SOLVING',
+    question: 'If you were responsible for solving the problem, what would you actually do?',
     description:
-      'Demystifying the mechanics of governance through forensic policy analysis. Candidates deconstruct macroeconomic data, evaluate statutory frameworks, author comprehensive policy white papers, and defend regulatory drafts before simulated parliamentary standing committees and expert witness panels.',
+      'This is where ideas move from discussion to governance. Students act as policymakers and examine the entire process: Problem → Evidence → Stakeholders → Alternatives → Policy → Implementation → Impact. Good intentions alone do not produce good policy.',
     skills: [
-      'White Paper & Statutory Drafting',
-      'Macroeconomic Impact Modeling',
-      'Regulatory & Jurisprudential Analysis',
-      'Stakeholder Conflict Mediation',
-      'Evidence-Based Governance',
-      'Implementation Roadmapping',
+      'Problem Identification',
+      'Policy Analysis & Drafting',
+      'Stakeholder Mapping',
+      'Resource Allocation',
+      'Evidence-Based Thinking',
+      'Implementation Planning',
     ],
-    simulation: 'Think Tank Policy Briefing Rounds and Parliamentary Standing Committee Simulations.',
+    simulation: 'Policy briefing rounds, simulated standing committees, and legislative draft reviews.',
     image: policyImg,
-    imageCaption: 'Plate 3.1 — Policy Task Force Reviewing Annotated Legislative Frameworks.',
-    archivalCode: 'ZH-POL-PBL-03',
+    imageCaption: 'Plate 3.1 — Policy Task Force Reviewing Practical Solutions.',
+    archivalCode: 'ZH-POL-03',
   },
   {
-    id: 'administration',
+    id: 'problem-solving',
     number: '04',
-    category: 'EXECUTIVE COMMAND & STATE MACHINERY',
-    title: 'ADMINISTRATION',
-    subtitle: 'CIVIL SERVICES & EMERGENCY GOVERNANCE',
-    question: 'When systemic breakdown, civic unrest, and logistical bottlenecks overwhelm public infrastructure, how do you exercise decisive, constitutional administrative command?',
+    category: 'PROBLEM SOLVING & CRISIS MANAGEMENT',
+    title: 'PROBLEM-SOLVING & CRISIS',
+    subtitle: 'MURDER MYSTERY & SIMULATION CHALLENGES',
+    question: 'What does leadership look like when you have to solve a crisis under incomplete information?',
     description:
-      'Grounded in the operational realities of civil administration and public machinery. Participants simulate district magistrate interventions, inter-agency disaster logistics, regulatory enforcement, and high-stakes ethical dilemmas where textbook solutions crumble under friction.',
+      'A hands-on, engaging problem-solving experience. Participants work through clues, competing hypotheses, and urgent timelines. You learn how to connect pieces of information, work closely with a team, and make practical decisions under pressure.',
     skills: [
-      'Situation Room Decision-Making',
-      'Inter-Agency Disaster Logistics',
-      'Administrative Protocol Execution',
-      'Ethical Public Governance',
-      'High-Stakes Resource Allocation',
-      'Crisis Communication & Calamity Response',
+      'Observation & Attention to Detail',
+      'Logical Reasoning',
+      'Team Collaboration',
+      'Information Analysis',
+      'Quick Decision-Making',
+      'Crisis Management',
     ],
-    simulation: 'District Administration Crisis War-Rooms & Civil Service Scenario Exercises.',
+    simulation: 'Interactive murder mystery cases, situation room challenges, and crisis problem-solving.',
     image: adminImg,
-    imageCaption: 'Plate 4.1 — Emergency Administration & Tactical Inter-Agency Operations Desk.',
-    archivalCode: 'ZH-ADM-GOV-04',
+    imageCaption: 'Plate 4.1 — Problem-Solving & Crisis Simulation Room.',
+    archivalCode: 'ZH-SIM-04',
   },
 ];
 
@@ -111,20 +111,20 @@ export default function FourDomains() {
           <div className="flex items-center gap-2 sm:gap-3">
             <span className="text-[#7b1824] font-bold">03</span>
             <span className="text-[#d8cfc2]">/</span>
-            <span>FOUR CORE DISCIPLINES // MAGAZINE SPREAD</span>
+            <span>FOUR FLAGSHIP EXPERIENCES // CORE VERTICALS</span>
           </div>
           <div className="text-[#7b1824] font-semibold">
-            DISCIPLINE {activeDomain.number} OF 04
+            VERTICAL {activeDomain.number} OF 04
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-8 sm:mb-12">
           <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
-            Four Arenas of <span className="italic text-[#7b1824]">Sovereign Statecraft</span>
+            Four Core <span className="italic text-[#7b1824]">Flagship Verticals</span>
           </h2>
           <p className="font-sans text-xs sm:text-base text-[#5c6776] mt-2 max-w-2xl">
-            Each discipline is structured as an institutional proving ground designed to cultivate analytical mastery, forensic advocacy, and executive resolve.
+            Each vertical is designed to help you practice essential professional skills: research, public speaking, negotiation, and teamwork.
           </p>
         </div>
 
@@ -170,14 +170,14 @@ export default function FourDomains() {
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#e5dfd5] pb-4 sm:pb-6 mb-6 sm:mb-8">
               <div className="flex items-center gap-2 sm:gap-3">
                 <span className="px-2.5 py-0.5 bg-[#7b1824] text-white font-mono text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold shadow-sm rounded-sm">
-                  DISCIPLINE {activeDomain.number}
+                  VERTICAL {activeDomain.number}
                 </span>
                 <span className="font-mono text-[10px] sm:text-xs text-[#5c6776] tracking-wider uppercase truncate font-medium">
                   {activeDomain.category}
                 </span>
               </div>
               <div className="font-mono text-[10px] sm:text-[11px] text-[#7a8595] tracking-widest uppercase">
-                REF: <span className="text-[#0e141e] font-semibold">{activeDomain.archivalCode}</span>
+                CODE: <span className="text-[#0e141e] font-semibold">{activeDomain.archivalCode}</span>
               </div>
             </div>
 
@@ -195,10 +195,10 @@ export default function FourDomains() {
                   </div>
                 </div>
 
-                {/* Central Provocative Question */}
+                {/* Central Question */}
                 <div className="p-4 sm:p-6 bg-[#faf8f5] border-l-4 border-[#7b1824] border-y border-r border-[#e5dfd5] rounded-r-sm">
                   <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#7a8595] block mb-2 font-semibold">
-                    The Central Inquiry
+                    Core Question
                   </span>
                   <blockquote className="font-serif italic text-lg sm:text-2xl text-[#0e141e] leading-snug">
                     "{activeDomain.question}"
@@ -210,19 +210,19 @@ export default function FourDomains() {
                   <p>{activeDomain.description}</p>
                 </div>
 
-                {/* Simulation Crucible Note */}
+                {/* Simulation Format Note */}
                 <div className="p-3.5 sm:p-4 bg-[#faf8f5] border border-[#e5dfd5] font-mono text-[11px] sm:text-xs text-[#5c6776] rounded-sm">
                   <span className="text-[#0e141e] font-bold uppercase block mb-1">
-                    Crucible Arena:
+                    Simulation Format:
                   </span>
                   <span className="text-[#3e4856]">{activeDomain.simulation}</span>
                 </div>
 
-                {/* Core Applied Competencies */}
+                {/* Key Skills */}
                 <div>
                   <div className="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-[#7a8595] mb-3 flex items-center gap-2 font-semibold">
                     <span className="w-1.5 h-1.5 bg-[#7b1824]"></span>
-                    Core Applied Competencies
+                    Key Skills You Will Develop
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {activeDomain.skills.map((skill) => (

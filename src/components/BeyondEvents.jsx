@@ -1,47 +1,47 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Flag, Coffee, Sparkles, ArrowRight, Shield } from 'lucide-react';
+import { BookOpen, Flag, Coffee, Sparkles, ArrowRight } from 'lucide-react';
 
 const ECOSYSTEM = [
   {
     number: '01',
-    title: 'THE FORENSIC MASTERCLASSES',
-    tagline: 'METHODOLOGICAL SPRINTS & ANALYTICAL RIGOR',
+    title: 'SOFT SKILLS WORKSHOPS',
+    tagline: 'FOUNDATIONAL COMMUNICATION & CONFIDENCE',
     icon: BookOpen,
     description:
-      'High-frequency, precision laboratories dedicated to deconstructing treaty syntax, British Parliamentary adjudications, statutory drafting, and empirical policy evaluation. Led by seasoned adjudicators and senior fellows.',
-    deliverable: 'Methodology Whitepapers & Live Adversarial Sprints',
-    frequency: 'Fortnightly Laboratory',
+      'Monthly, activity-based workshops focusing on public speaking, group discussions, storytelling, presentation skills, logical reasoning, and interview readiness.',
+    deliverable: 'Interactive Workshops & Live Speaking Practice',
+    frequency: 'Every Month',
   },
   {
     number: '02',
-    title: 'CONVOCATIONS OF STATECRAFT',
-    tagline: 'FLAGSHIP NATIONAL CRISIS CONCLAVES',
+    title: 'INTERNAL FLAGSHIP EVENTS',
+    tagline: 'REGULAR SIMULATIONS & COMPETITION',
     icon: Flag,
     description:
-      'Premier inter-collegiate symposia convening top-tier delegates and parliamentary orators nationwide. Features interconnected multi-cabinet joint crisis environments with dynamic, real-time geopolitical and macroeconomic perturbations.',
-    deliverable: 'Joint Crisis Cabinets & National Security Assemblies',
-    frequency: 'Biannual Plenary',
+      'Two internal flagship events conducted every month, rotating between Model United Nations, Oxford Debates, Public Policy drafting, and Murder Mystery simulations.',
+    deliverable: '2 Flagship Simulations per Month',
+    frequency: 'Twice a Month',
   },
   {
     number: '03',
-    title: 'CHATHAM HOUSE COLLOQUIUMS',
-    tagline: 'OFF-THE-RECORD PRACTITIONER ENCLAVES',
+    title: 'COFFEE WITH ZERO HOUR',
+    tagline: 'DIRECT INDUSTRY & GUEST EXPOSURE',
     icon: Coffee,
     description:
-      'Intimate, strictly confidential roundtables convened under the Chatham House Rule with career ambassadors, constitutional jurists, senior civil servants, and think-tank directors. Unvarnished exposure to actual statecraft.',
-    deliverable: 'Confidential Roundtables (Strict Limit: 15 Fellows)',
-    frequency: 'Monthly Enclave',
+      'Informal fireside conversations connecting students directly with HR professionals, corporate leaders, entrepreneurs, civil servants, and alumni for career advice and networking.',
+    deliverable: 'Fireside Chat & Open Student Q&A',
+    frequency: 'Every 2 Months',
   },
   {
     number: '04',
-    title: 'THE ANNUAL CAPSTONE SYMPOSIUM',
-    tagline: 'THE PAN-COLLEGIATE FESTIVAL OF GOVERNANCE',
+    title: 'ZERO HOUR ANNUAL FEST',
+    tagline: 'INTERCOLLEGIATE FESTIVAL OF LEADERSHIP',
     icon: Sparkles,
     description:
-      'The signature multidisciplinary congregation where diplomatic councils, parliamentary chambers, policy hackathons, and administrative crisis rooms converge in an exhaustive celebration of public leadership.',
-    deliverable: 'Plenary Chambers, Policy Exhibitions & Laureates',
-    frequency: 'Annual Capstone Conclave',
+      'The big annual intercollegiate festival bringing all 4 flagship verticals together on a competitive stage with participants and judges from across different colleges.',
+    deliverable: 'Intercollegiate Summit & Awards',
+    frequency: 'Annual Flagship Fest',
   },
 ];
 
@@ -55,10 +55,10 @@ export default function BeyondEvents() {
           <div className="flex items-center gap-3">
             <span className="text-[#7b1824] font-bold">06</span>
             <span className="text-[#d8cfc2]">/</span>
-            <span>THE CONTINUOUS ECOSYSTEM // BEYOND EVENTS</span>
+            <span>YEAR-ROUND PROGRAMMES // BEYOND ISOLATED EVENTS</span>
           </div>
           <div className="text-[#7b1824] font-semibold">
-            AN ENDURING INSTITUTIONAL CADENCE
+            CONTINUOUS ANNUAL RHYTHM
           </div>
         </div>
 
@@ -66,10 +66,10 @@ export default function BeyondEvents() {
         <div className="mb-14">
           <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
             More Than An Event Calendar. <br />
-            <span className="italic text-[#7b1824]">A Year-Round Development Engine.</span>
+            <span className="italic text-[#7b1824]">A Year-Round Growth Ecosystem.</span>
           </h2>
           <p className="font-sans text-sm sm:text-base text-[#5c6776] mt-2 max-w-2xl">
-            Zero Hour is not built around sporadic one-off festivals. It operates as an enduring institutional ecosystem with consistent intellectual cadence.
+            Zero Hour is not just a club that shows up once a semester. We maintain an active, year-round schedule of workshops, simulations, and guest sessions.
           </p>
         </div>
 
@@ -86,14 +86,14 @@ export default function BeyondEvents() {
                   <div className="flex items-center justify-between border-b border-[#e5dfd5] pb-4 mb-6">
                     <div className="flex items-center gap-2">
                       <span className="font-mono text-xs font-bold text-[#7b1824]">
-                        ECO // {item.number}
+                        LAYER // {item.number}
                       </span>
                       <span className="text-[#d8cfc2]">|</span>
-                      <span className="font-mono text-[10px] text-[#7a8595] tracking-widest uppercase">
+                      <span className="font-mono text-[10px] text-[#7a8595] tracking-widest uppercase truncate max-w-[170px] sm:max-w-none">
                         {item.tagline}
                       </span>
                     </div>
-                    <span className="font-mono text-[10px] text-[#997126] bg-[#fcf8f0] px-2.5 py-0.5 border border-[#c29236]/35 font-semibold rounded-sm">
+                    <span className="font-mono text-[10px] text-[#997126] bg-[#fcf8f0] px-2.5 py-0.5 border border-[#c29236]/35 font-semibold rounded-sm shrink-0">
                       {item.frequency}
                     </span>
                   </div>
@@ -111,7 +111,7 @@ export default function BeyondEvents() {
                 </div>
 
                 <div className="pt-4 border-t border-[#e5dfd5] flex items-center justify-between font-mono text-xs">
-                  <span className="text-[#7a8595] text-[11px] font-medium">Primary Format:</span>
+                  <span className="text-[#7a8595] text-[11px] font-medium">Core Format:</span>
                   <span className="text-[#7b1824] font-semibold">{item.deliverable}</span>
                 </div>
               </div>

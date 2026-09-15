@@ -16,7 +16,7 @@ export default function FinalCTA() {
         {/* Section Header Meta */}
         <div className="inline-flex items-center gap-2 sm:gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#5c6776] mb-6 sm:mb-8 border border-[#e5dfd5] px-3 sm:px-4 py-1.5 bg-white shadow-sm font-semibold rounded-full">
           <span className="w-1.5 h-1.5 bg-[#7b1824] rounded-full animate-pulse"></span>
-          <span>SECTION 10 // OFFICIAL REGISTRATION</span>
+          <span>SECTION 08 // REGISTRATION</span>
         </div>
 
         {/* Monumental Headline */}
@@ -32,21 +32,21 @@ export default function FinalCTA() {
           </h2>
 
           <div className="py-3 sm:py-5 flex flex-wrap justify-center items-center gap-x-3 sm:gap-x-4 gap-y-2 font-serif text-lg sm:text-2xl md:text-3xl text-[#5c6776] uppercase tracking-tight">
-            <span>INQUIRY.</span>
+            <span>RESEARCH.</span>
             <span className="text-[#7b1824] font-mono text-base sm:text-2xl">/</span>
-            <span>SYNTHESIS.</span>
+            <span>THINK.</span>
             <span className="text-[#7b1824] font-mono text-base sm:text-2xl">/</span>
-            <span>DISCOURSE.</span>
+            <span>SPEAK.</span>
             <span className="text-[#7b1824] font-mono text-base sm:text-2xl">/</span>
-            <span>CONCILIATION.</span>
+            <span>NEGOTIATE.</span>
             <span className="text-[#7b1824] font-mono text-base sm:text-2xl">/</span>
-            <span>ARBITRATION.</span>
+            <span>DECIDE.</span>
             <span className="text-[#7b1824] font-mono text-base sm:text-2xl">/</span>
-            <span className="text-[#7b1824] font-bold">STEWARDSHIP.</span>
+            <span className="text-[#7b1824] font-bold">LEAD.</span>
           </div>
 
           <p className="font-sans text-sm sm:text-base md:text-lg text-[#5c6776] max-w-2xl mx-auto leading-relaxed px-2">
-            The next cohort is being assembled. Scan the official registration QR code below or open the Google Form directly to submit your application.
+            The new academic batch is assembling. Scan the QR code below or click the button to fill out the official Zero Hour registration form.
           </p>
         </motion.div>
 
@@ -81,7 +81,7 @@ export default function FinalCTA() {
 
               <div className="mt-3 flex items-center gap-1.5 font-mono text-[10px] text-[#5c6776] uppercase tracking-wider font-semibold">
                 <QrCode className="w-3.5 h-3.5 text-[#7b1824]" />
-                <span>Scan with phone camera</span>
+                <span>Scan with your phone camera</span>
               </div>
             </div>
 
@@ -89,15 +89,15 @@ export default function FinalCTA() {
             <div className="flex-1 space-y-4">
               <div>
                 <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#7b1824]/10 text-[#7b1824] font-mono text-[10px] uppercase tracking-widest font-bold rounded-sm mb-2 border border-[#7b1824]/20">
-                  <span>COHORT 2026</span>
+                  <span>COHORT 2026–27</span>
                   <span>•</span>
-                  <span>OFFICIAL APPLICATION PASS</span>
+                  <span>MEMBER REGISTRATION</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#0e141e] font-bold uppercase tracking-tight">
-                  Scan To Register Instantly
+                  Scan to Register
                 </h3>
                 <p className="text-xs sm:text-sm text-[#5c6776] font-sans leading-relaxed mt-1">
-                  Point your smartphone camera at the QR code to open the official Zero Hour Registration Form, or click the direct button below.
+                  Point your smartphone camera at the QR code to open the registration form, or click the direct button below.
                 </p>
               </div>
 
@@ -105,15 +105,15 @@ export default function FinalCTA() {
               <ul className="space-y-2 font-mono text-xs text-[#3e4856] border-t border-b border-[#e5dfd5] py-3">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#7b1824] shrink-0" />
-                  <span>Meritocratic evaluation for all academic disciplines</span>
+                  <span>Open to students across all departments and academic years</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#7b1824] shrink-0" />
-                  <span>Direct submission to the Zero Hour Secretariat</span>
+                  <span>Participate in workshops, MUNs, debates, and crisis simulations</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#7b1824] shrink-0" />
-                  <span>Immediate confirmation upon application receipt</span>
+                  <span>Direct updates sent to your registered email</span>
                 </li>
               </ul>
 
@@ -125,7 +125,7 @@ export default function FinalCTA() {
                   rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 bg-[#7b1824] hover:bg-[#921d2c] text-white font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-md flex items-center justify-center gap-2 rounded-sm group text-center border border-[#540e17]"
                 >
-                  <span>Open Official Google Registration Form</span>
+                  <span>Open Registration Form</span>
                   <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
               </div>
@@ -134,10 +134,10 @@ export default function FinalCTA() {
           </div>
         </motion.div>
 
-        {/* Archival Footnote */}
+        {/* Footnote */}
         <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-[#e5dfd5] flex flex-col sm:flex-row justify-between items-center gap-2 text-[10px] sm:text-xs font-mono text-[#7a8595] max-w-4xl mx-auto">
-          <span>COHORT 2026 // OPEN APPLICANT EVALUATION</span>
-          <span className="text-[#7b1824] font-semibold">MERITOCRATIC SELECTION MANDATE</span>
+          <span>ZERO HOUR // STUDENT DEVELOPMENT & LEADERSHIP</span>
+          <span className="text-[#7b1824] font-semibold">LEARN • PRACTISE • LEAD</span>
         </div>
 
       </div>

@@ -4,59 +4,59 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ACTIONS = [
   {
     id: '01',
-    title: 'DECONSTRUCT PRIMARY DOCTRINE',
-    domain: 'INTELLIGENCE & PRECEDENT',
-    context: 'Subject statutory conventions, unredacted communiqués, and macroeconomic balance sheets to rigorous forensic cross-examination within condensed temporal windows.',
-    scenario: 'Dissect conflicting multi-lateral intelligence briefings regarding disputed maritime transit corridors to formulate enforceable legal codicils resistant to ICJ challenge.',
+    title: 'REPRESENT A NATION IN MUN',
+    domain: 'DIPLOMACY & NEGOTIATION',
+    context: 'Step into the shoes of an official delegate, research foreign policy, and negotiate real solutions with other countries.',
+    scenario: 'Represent an assigned country in a simulated UN committee, negotiate international trade accords, and form voting alliances.',
   },
   {
     id: '02',
-    title: 'EMBODY SOVEREIGN STATEHOOD',
-    domain: 'SOVEREIGN DIPLOMACY',
-    context: 'Assume the geopolitical calculus of sovereign nation-states within adversarial chambers, defending national interest under multilateral sanctions.',
-    scenario: 'Represent an energy-dependent sovereign state under embargo; structure bilateral swap conventions and humanitarian safe passages amidst hostile voting blocs.',
+    title: 'DEBATE TIMELY ISSUES',
+    domain: 'DEBATE & CRITICAL THINKING',
+    context: 'Defend or challenge ideas using logic, facts, and clear arguments under timed conditions.',
+    scenario: 'Deliver a structured 5-minute parliamentary speech defending your side of a motion while answering live questions from opponents.',
   },
   {
     id: '03',
-    title: 'DEFEND UNDER PARLIAMENTARY FIRE',
-    domain: 'PARLIAMENTARY RHETORIC',
-    context: 'Occupy the dispatch box under relentless cross-examination, navigating unsolicited Points of Information and adversarial floor motions with composure.',
-    scenario: 'Deliver an unscripted six-minute defense of an emergency fiscal appropriations bill while neutralizing hostile floor interventions from the shadow opposition.',
+    title: 'DRAFT PRACTICAL POLICIES',
+    domain: 'PUBLIC POLICY & GOVERNANCE',
+    context: 'Move from just discussing problems to creating workable, step-by-step policy solutions with real constraints.',
+    scenario: 'Design a municipal traffic and safety policy, balancing budget limits, public demands, and implementation timelines.',
   },
   {
     id: '04',
-    title: 'FORGE ADVERSARIAL CONSENSUS',
-    domain: 'MULTILATERAL CONSENSUS',
-    context: 'Bridge ideological fissures and reconcile irreconcilable interests to draft majoritarian treaty texts without conceding foundational sovereignty.',
-    scenario: 'Reconcile three diametrically opposed regional caucuses to ratify an operative protocol on transnational river basin stewardship under drought conditions.',
+    title: 'SOLVE A CRISIS OR MYSTERY',
+    domain: 'PROBLEM-SOLVING & TEAMWORK',
+    context: 'Work with your team to review clues, test hypotheses, and solve complex problems under time pressure.',
+    scenario: 'Analyze clues and suspect statements in an interactive murder mystery case to uncover the truth before the deadline.',
   },
   {
     id: '05',
-    title: 'ARCHITECT STATUTORY POLICY',
-    domain: 'STATUTORY REFORM',
-    context: 'Translate complex societal frictions, fiscal bottlenecks, and legal boundaries into durable regulatory frameworks and administrative statutes.',
-    scenario: 'Draft a municipal framework governing autonomous critical infrastructure during power grid failure, arbitrating between public safety and commercial continuity.',
+    title: 'MASTER GROUP DISCUSSIONS',
+    domain: 'PLACEMENT & INTERVIEW PREP',
+    context: 'Build core communication skills needed for campus placement drives, job interviews, and professional meetings.',
+    scenario: 'Practice structured group discussions and receive immediate feedback on speaking confidence, listening, and argument structure.',
   },
   {
     id: '06',
-    title: 'EXERCISE CRISIS PREROGATIVE',
-    domain: 'CRISIS COMMAND',
-    context: 'Commit to irreversible administrative actions under radical temporal scarcity, incomplete situational awareness, and severe consequence.',
-    scenario: 'As District Magistrate during a hazardous chemical containment failure, execute an emergency metropolitan evacuation protocol with only four minutes of telemetry.',
+    title: 'INTERACT WITH PROFESSIONALS',
+    domain: 'COFFEE WITH ZERO HOUR',
+    context: 'Engage directly with HR leaders, entrepreneurs, civil servants, and alumni through casual fireside conversations.',
+    scenario: 'Host an interactive Q&A session with an industry professional to gain practical career insights and networking exposure.',
   },
   {
     id: '07',
-    title: 'DELIVER ORAL ADVOCACY',
-    domain: 'APPELLATE JURISPRUDENCE',
-    context: 'Argue complex constitutional doctrines and statutory interpretations directly before judicial benches and high-level commissions.',
-    scenario: 'Advance constitutional arguments before an appellate tribunal regarding legislative overreach, defending proportional rights against national security mandates.',
+    title: 'WRITE RESEARCH BRIEFS',
+    domain: 'RESEARCH & KNOWLEDGE',
+    context: 'Study current affairs, verify facts, and prepare clear, easy-to-read background briefs for club simulations.',
+    scenario: 'Compile a 2-page background dossier on renewable energy policies to help participants prepare for an upcoming event.',
   },
   {
     id: '08',
-    title: 'GOVERN A CRISIS DIRECTORATE',
-    domain: 'INSTITUTIONAL STEWARDSHIP',
-    context: 'Command functional secretariats, orchestrate crisis inject architectures, and maintain absolute procedural equilibrium under live public scrutiny.',
-    scenario: 'Direct a forty-delegate crisis cabinet managing simulated international contagion spread, coordinating diplomatic press briefings and emergency logistics.',
+    title: 'PLAN & MANAGE REAL EVENTS',
+    domain: 'LEADERSHIP & OPERATIONS',
+    context: 'Gain hands-on experience in planning timelines, leading volunteers, handling logistics, and executing major events.',
+    scenario: 'Coordinate on-ground logistics, manage registrations, and guide volunteer teams during the annual college fest.',
   },
 ];
 
@@ -73,20 +73,20 @@ export default function WhatYouWillDo() {
           <div className="flex items-center gap-3">
             <span className="text-[#7b1824] font-bold">05</span>
             <span className="text-[#d8cfc2]">/</span>
-            <span>APPLIED PRACTICE // WHAT WILL YOU ACTUALLY DO?</span>
+            <span>PRACTICAL ACTIVITIES // WHAT WILL YOU ACTUALLY DO?</span>
           </div>
           <div className="text-[#7b1824] font-semibold">
-            EIGHT CORE DISCIPLINES
+            EIGHT CORE EXPERIENCES
           </div>
         </div>
 
         {/* Section Editorial Headline */}
         <div className="mb-14">
           <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
-            Direct Practice. <span className="italic text-[#7b1824]">No Passive Theory.</span>
+            Real Practice. <span className="italic text-[#7b1824]">Not Just Passive Listening.</span>
           </h2>
           <p className="font-sans text-sm sm:text-base text-[#5c6776] mt-2 max-w-2xl">
-            Members engage in concrete simulations every week. Select any discipline to review its institutional application.
+            Members participate in concrete, hands-on activities every month. Click any item to see what it looks like in practice.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ export default function WhatYouWillDo() {
                 className="bg-white border border-[#e5dfd5] p-6 sm:p-8 shadow-xl rounded-sm ring-1 ring-[#c29236]/15"
               >
                 <div className="flex items-center justify-between border-b border-[#e5dfd5] pb-4 mb-6 font-mono text-[10px] text-[#7a8595] uppercase tracking-widest">
-                  <span>DISCIPLINE {activeAction.id}</span>
+                  <span>ACTIVITY {activeAction.id}</span>
                   <span className="text-[#7b1824] font-bold">{activeAction.domain}</span>
                 </div>
 
@@ -155,7 +155,7 @@ export default function WhatYouWillDo() {
 
                 <div className="border-t border-[#e5dfd5] pt-4 space-y-2 bg-[#faf8f5] p-4 border border-[#e5dfd5] rounded-sm">
                   <div className="font-mono text-[10px] uppercase tracking-widest text-[#7a8595] font-semibold">
-                    Realistic Simulation Context:
+                    Example Scenario:
                   </div>
                   <p className="font-mono text-xs text-[#7b1824] leading-relaxed font-medium">
                     "{activeAction.scenario}"

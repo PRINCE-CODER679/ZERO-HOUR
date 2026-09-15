@@ -28,12 +28,11 @@ export default function Navbar({ onOpenJoin }) {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Domains', href: '#domains' },
-    { name: 'Crucible', href: '#experience' },
-    { name: 'Actions', href: '#actions' },
-    { name: 'Ecosystem', href: '#ecosystem' },
-    { name: 'Pipeline', href: '#pipeline' },
-    { name: 'Structure', href: '#leadership' },
+    { name: 'Flagships', href: '#domains' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Activities', href: '#actions' },
+    { name: 'Year-Round', href: '#ecosystem' },
+    { name: 'Growth', href: '#pipeline' },
   ];
 
   return (
@@ -163,7 +162,7 @@ export default function Navbar({ onOpenJoin }) {
                 }}
                 className="w-full py-3.5 bg-[#7b1824] hover:bg-[#921d2c] text-white font-mono text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 shadow-md rounded-sm border border-[#540e17]"
               >
-                <span>Enter The Crucible (Apply)</span>
+                <span>Join Zero Hour (Register)</span>
                 <ArrowUpRight className="w-4 h-4" />
               </button>
             </div>

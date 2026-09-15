@@ -4,12 +4,12 @@ import chamberImg from '../assets/images/hero_parliament.jpg';
 import logoImg from '../assets/images/zero_hour_logo.jpg';
 
 const SEQUENCE = [
-  { step: '01', word: 'INVESTIGATE', desc: 'Deconstruct statutory precedents, primary treaties, and baseline intelligence dossiers.' },
-  { step: '02', word: 'SYNTHESIZE', desc: 'Isolate structural leverage points and stress-test strategic hypotheses under clock compression.' },
-  { step: '03', word: 'ADVOCATE', desc: 'Articulate uncompromising positions with rhetorical cadence, dialectical poise, and forensic precision.' },
-  { step: '04', word: 'NEGOTIATE', desc: 'Reconcile competing sovereign imperatives into durable, multilateral treaty covenants.' },
-  { step: '05', word: 'DECIDE', desc: 'Commit irreversible institutional capital amidst ambiguity, incomplete data, and acute friction.' },
-  { step: '06', word: 'GOVERN', desc: 'Assume total stewardship for systemic outcomes, coalition cohesion, and moral accountability.' },
+  { step: '01', word: 'RESEARCH', desc: 'Find reliable facts, study the topic, and understand the problem before speaking.' },
+  { step: '02', word: 'THINK', desc: 'Break down complex issues, spot logical flaws, and build solid arguments.' },
+  { step: '03', word: 'SPEAK', desc: 'Express your thoughts clearly and confidently in front of an audience.' },
+  { step: '04', word: 'NEGOTIATE', desc: 'Work with people with different views and find practical solutions together.' },
+  { step: '05', word: 'DECIDE', desc: 'Make smart, timely choices under pressure and limited information.' },
+  { step: '06', word: 'LEAD', desc: 'Take responsibility for your team, solve problems, and help others grow.' },
 ];
 
 export default function Hero({ onOpenJoin }) {
@@ -24,14 +24,14 @@ export default function Hero({ onOpenJoin }) {
 
   return (
     <section className="relative min-h-screen pt-24 sm:pt-28 pb-14 sm:pb-20 flex flex-col justify-between overflow-hidden bg-[#faf8f5] border-b border-[#e5dfd5] bg-grain">
-      {/* Grand Parliamentary Chamber Background Image */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
           src={chamberImg}
-          alt="Parliamentary Assembly Hall Chamber"
+          alt="Zero Hour Assembly Chamber"
           className="w-full h-full object-cover object-center filter contrast-110 brightness-95 opacity-[0.16]"
         />
-        {/* Dual Soft Overlays for Typographic Legibility */}
+        {/* Soft Overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#faf8f5] via-[#faf8f5]/80 to-[#faf8f5]/90" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#faf8f5] via-[#faf8f5]/85 to-transparent" />
       </div>
@@ -51,7 +51,7 @@ export default function Hero({ onOpenJoin }) {
           <div className="flex items-center gap-2 sm:gap-3">
             <span className="text-[#0e141e] font-bold">ZERO HOUR</span>
             <span className="text-[#d8cfc2]">/</span>
-            <span className="truncate">FOUNDATIONAL TREATISE & DISPATCH</span>
+            <span className="truncate">STUDENT DEVELOPMENT & LEADERSHIP PLATFORM</span>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-[#7b1824] font-bold tracking-widest truncate">
@@ -63,11 +63,11 @@ export default function Hero({ onOpenJoin }) {
         </div>
       </div>
 
-      {/* Main Typographic Hero Core */}
+      {/* Main Hero Section */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Left Column: Monumental Headline */}
+          {/* Left Column: Clear Main Headline */}
           <div className="lg:col-span-7 space-y-4 sm:space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -76,7 +76,7 @@ export default function Hero({ onOpenJoin }) {
               className="inline-flex items-center gap-2 px-3.5 py-1 bg-white border border-[#c29236]/35 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#7b1824] shadow-sm font-semibold rounded-full"
             >
               <span className="w-1.5 h-1.5 bg-[#7b1824] rounded-full animate-pulse"></span>
-              The Collegiate Crucible of Statecraft
+              Learn by Doing • Practice by Leading
             </motion.div>
 
             <motion.div
@@ -85,12 +85,12 @@ export default function Hero({ onOpenJoin }) {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <h1 className="font-serif text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] leading-[0.98] sm:leading-[0.95] tracking-tight text-[#0e141e] uppercase font-normal break-words">
-                THE CRUCIBLE <br />
+                DON’T JUST STUDY <br />
                 <span className="italic font-light text-[#5c6776] block mt-1">
-                  WHERE DISCOURSE
+                  LEADERSHIP.
                 </span>
                 <span className="font-semibold text-[#7b1824] tracking-normal block mt-1">
-                  BECOMES CONVECTIVE<span className="text-[#c29236]">.</span>
+                  EXPERIENCE IT<span className="text-[#c29236]">.</span>
                 </span>
               </h1>
             </motion.div>
@@ -101,18 +101,18 @@ export default function Hero({ onOpenJoin }) {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base sm:text-lg md:text-xl text-[#3e4856] max-w-2xl font-sans font-normal leading-relaxed pt-2 border-l-2 border-[#7b1824] pl-3 sm:pl-5"
             >
-              An autonomous collegiate academy for multilateral statecraft, dialectical debate, and executive governance. Forging analytical mastery through adversarial cross-examination and time-compressed decision architecture.
+              Zero Hour is a student-led club where you learn public speaking, debate, diplomacy, and public policy by doing real simulations—not just sitting in lectures.
             </motion.p>
           </div>
 
-          {/* Right Column: Official Insignia Showcase & Axiom Card */}
+          {/* Right Column: Logo & Core Quote Card */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
             className="lg:col-span-5 bg-white/95 backdrop-blur-sm border border-[#e5dfd5] p-5 sm:p-7 shadow-xl rounded-md relative flex flex-col justify-between ring-1 ring-[#c29236]/15"
           >
-            {/* Official Logo Artwork Container */}
+            {/* Logo Image */}
             <div className="relative border border-[#e5dfd5] bg-[#faf8f5] p-4 mb-5 sm:mb-6 group overflow-hidden rounded-sm shadow-inner">
               <img
                 src={logoImg}
@@ -120,17 +120,17 @@ export default function Hero({ onOpenJoin }) {
                 className="w-full h-auto max-h-[260px] sm:max-h-[300px] object-contain mx-auto transition-transform duration-500 group-hover:scale-[1.02]"
               />
               <div className="mt-3 pt-2.5 border-t border-[#e5dfd5] flex items-center justify-between font-mono text-[9px] sm:text-[10px] text-[#7a8595] uppercase tracking-wider">
-                <span className="font-semibold">INSTITUTIONAL CREST</span>
-                <span className="text-[#7b1824] font-bold">ZERO HOUR ACADEMY</span>
+                <span className="font-semibold">OFFICIAL CLUB CREST</span>
+                <span className="text-[#7b1824] font-bold">ZERO HOUR</span>
               </div>
             </div>
 
             <div className="space-y-2 sm:space-y-3">
               <p className="font-serif italic text-base sm:text-lg text-[#0e141e] leading-snug">
-                "Statecraft is neither inherited nor acquired by passive observation. It is tempered exclusively in the crucible of adversarial consequence."
+                "Leadership cannot be developed by observation alone. It has to be practised."
               </p>
               <p className="font-mono text-[11px] sm:text-xs text-[#7a8595] uppercase tracking-wider">
-                — Zero Hour Institutional Charter §1
+                — Zero Hour Core Philosophy
               </p>
             </div>
             
@@ -139,30 +139,30 @@ export default function Hero({ onOpenJoin }) {
                 onClick={onOpenJoin}
                 className="flex-1 py-3 bg-[#7b1824] hover:bg-[#921d2c] text-white font-mono text-xs uppercase tracking-widest font-semibold transition-all flex items-center justify-center gap-2 shadow-md rounded-sm border border-[#540e17]"
               >
-                <span>Enter The Crucible</span>
+                <span>Join Zero Hour</span>
                 <span className="text-white/80">→</span>
               </button>
               <a
-                href="#experience"
+                href="#about"
                 className="py-3 px-4 bg-[#f4f0e8] hover:bg-white text-[#0e141e] font-mono text-xs uppercase tracking-widest text-center border border-[#e5dfd5] transition-all font-semibold rounded-sm shadow-sm"
               >
-                Methodology
+                Learn More
               </a>
             </div>
           </motion.div>
         </div>
       </div>
 
-      {/* Bottom Editorial Scroll Sequence */}
+      {/* Bottom Step Track */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-4 sm:pt-6">
         <div className="border-t border-[#e5dfd5] pt-4 sm:pt-5">
           <div className="flex items-center justify-between mb-3 sm:mb-4">
             <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#5c6776] flex items-center gap-2 font-medium">
               <span className="w-2 h-0.5 bg-[#7b1824]"></span>
-              The Hexagonal Dialectic Progression
+              The 6-Step Skill Progression
             </span>
             <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-[#7a8595] hidden sm:block">
-              Stage {SEQUENCE[activeStep].step} of 06
+              Step {SEQUENCE[activeStep].step} of 06
             </span>
           </div>
 
@@ -209,7 +209,7 @@ export default function Hero({ onOpenJoin }) {
               <span className="text-[#5c6776]">{SEQUENCE[activeStep].desc}</span>
             </div>
             <a href="#experience" className="text-[#7b1824] hover:underline underline-offset-4 shrink-0 hidden md:inline font-semibold">
-              Dialectic Detail →
+              Explore The Experience →
             </a>
           </div>
         </div>

@@ -42,10 +42,10 @@ export default function JoinModal({ isOpen, onClose }) {
                 ZERO HOUR // DISCUSS • DEBATE • IMPACT
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl text-[#0e141e] uppercase font-bold">
-                Cohort 2026 Registration
+                Cohort 2026–27 Registration
               </h2>
               <p className="font-sans text-xs text-[#5c6776] mt-1">
-                Official registration is managed exclusively through the Zero Hour Google Form.
+                Official club registration form for Zero Hour.
               </p>
             </div>
           </div>
@@ -100,15 +100,15 @@ export default function JoinModal({ isOpen, onClose }) {
             <div className="border-t border-[#e5dfd5] pt-4 space-y-2 font-mono text-xs text-[#5c6776]">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Verified Official Google Form for Cohort 2026 Candidates</span>
+                <span>Official Zero Hour Club Registration Form</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#7b1824] shrink-0" />
-                <span>Open to all colleges, universities, and disciplines</span>
+                <span>Open to all branches, departments, and academic years</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#7b1824] shrink-0" />
-                <span>Candidates notified via institutional email following review</span>
+                <span>Direct notifications sent to your registered email</span>
               </div>
             </div>
 

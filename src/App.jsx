@@ -7,8 +7,6 @@ import ExperienceSequence from './components/ExperienceSequence';
 import WhatYouWillDo from './components/WhatYouWillDo';
 import BeyondEvents from './components/BeyondEvents';
 import DevelopmentPipeline from './components/DevelopmentPipeline';
-import WhoIsItFor from './components/WhoIsItFor';
-import LeadershipStructure from './components/LeadershipStructure';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import JoinModal from './components/JoinModal';
@@ -47,13 +45,7 @@ export default function App() {
         {/* SECTION 07 — DEVELOPMENT PIPELINE */}
         <DevelopmentPipeline />
 
-        {/* SECTION 08 — WHO IS IT FOR? */}
-        <WhoIsItFor />
-
-        {/* SECTION 09 — LEADERSHIP & GOVERNANCE */}
-        <LeadershipStructure />
-
-        {/* SECTION 10 — FINAL CTA */}
+        {/* SECTION 08 — FINAL CTA */}
         <FinalCTA onOpenJoin={handleOpenJoin} />
       </main>
 

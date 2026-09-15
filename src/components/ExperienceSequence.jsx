@@ -4,51 +4,51 @@ import { motion, AnimatePresence } from 'framer-motion';
 const STAGES = [
   {
     step: '01',
-    word: 'INQUIRY',
-    mandate: 'Forensic Exegesis of Primary Doctrine',
+    word: 'RESEARCH',
+    mandate: 'Understand the Issue Before You Speak',
     summary:
-      'Before entering any chamber, rigorous evidentiary interrogation begins. Delegates deconstruct statutory statutes, unredacted treaties, macroeconomic balance sheets, and diplomatic cables. In Zero Hour, secondary commentary is discarded in favor of unvarnished primary evidence.',
-    quote: 'Scientia potentia est — He who establishes the evidentiary baseline commands the perimeter of debate.',
+      'Good speaking starts with solid facts. Before stepping into any debate or simulation, members research the topic, study credible background briefs, and understand multiple perspectives instead of relying on guesswork.',
+    quote: 'Know your facts before you enter the room — preparation builds genuine confidence.',
   },
   {
     step: '02',
-    word: 'SYNTHESIS',
-    mandate: 'Dialectical Architecture Under Adversarial Pressure',
+    word: 'THINK',
+    mandate: 'Structure Your Arguments & Test Your Logic',
     summary:
-      'Raw intelligence without conceptual structure collapses in contested arenas. In this phase, delegates construct logical syllogisms, stress-test vulnerability vectors, and preempt opposing counter-arguments through rigorous dialectical synthesis.',
-    quote: 'Rhetoric stripped of structural validity is merely ornamental noise.',
+      'Having facts is not enough; you need to organize them. In this step, you learn to build logical arguments, identify hidden assumptions, and prepare for tough counter-arguments.',
+    quote: 'Clear thinking is the foundation of clear and persuasive communication.',
   },
   {
     step: '03',
-    word: 'DISCOURSE',
-    mandate: 'Parliamentary Oratory & Forensic Cadence',
+    word: 'SPEAK',
+    mandate: 'Public Speaking with Confidence & Clarity',
     summary:
-      'Stepping to the dispatch box or podium. Facing a skeptical, adversarial floor under stringent temporal constraints, delegates command cadence, deliver substantiated arguments, and withstand unscripted cross-examination without deflection.',
-    quote: 'Clarity of intellect produces undeniable sovereignty of speech.',
+      'Step up to the floor. Facing an active audience under time limits, you learn to express your ideas clearly, hold attention, and respond calmly to questions on the spot.',
+    quote: 'Public speaking is a skill anyone can master with consistent practice.',
   },
   {
     step: '04',
-    word: 'CONCILIATION',
-    mandate: 'Multilateral Diplomacy & Coalition Architecture',
+    word: 'NEGOTIATE',
+    mandate: 'Find Common Ground Across Differing Views',
     summary:
-      'While public speeches delineate national posture, bilateral diplomacy dictates treaty survival. Delegates navigate zero-sum incentives, engineer operative compromise without ideological surrender, and assemble durable majoritarian voting coalitions.',
-    quote: 'Diplomacy is the calculated alignment of divergent sovereign imperatives.',
+      'Speeches make your position known, but negotiation gets things done. You learn how to listen to opposing viewpoints, find shared interests, and build practical agreements.',
+    quote: 'Negotiation is the art of finding solutions when everyone wants something different.',
   },
   {
     step: '05',
-    word: 'ARBITRATION',
-    mandate: 'Executive Prerogative in Radical Ambiguity',
+    word: 'DECIDE',
+    mandate: 'Make Smart Choices Under Time Constraints',
     summary:
-      'When the countdown expires and perfect information remains unattainable, analysis yields to irreversible commitment. Delegates cast defining votes, authorize emergency directives, and shoulder personal culpability for systemic outcomes.',
-    quote: 'In moments of institutional crisis, abdication of choice is itself the gravest verdict.',
+      'In real life, you rarely have unlimited time or perfect information. You learn how to evaluate trade-offs, make a clear decision under pressure, and take ownership of the results.',
+    quote: 'Good decision-making means weighing consequences and taking action.',
   },
   {
     step: '06',
-    word: 'STEWARDSHIP',
-    mandate: 'Institutional Custodianship & Moral Accountability',
+    word: 'LEAD',
+    mandate: 'Take Responsibility & Support Your Team',
     summary:
-      'The apex of civic leadership. Delegates transcend factional allegiance to maintain procedural integrity, guide interdisciplinary working bodies through operational strain, and preserve institutional continuity for successor cohorts.',
-    quote: 'Authority is not measured by office, but by the magnitude of consequence one is willing to endure.',
+      'The highest level of student development. You manage real events, mentor newer members, coordinate teams, and build an environment where everyone can improve.',
+    quote: 'Leadership is not about a title — it is about taking responsibility for outcomes.',
   },
 ];
 
@@ -65,20 +65,20 @@ export default function ExperienceSequence() {
           <div className="flex items-center gap-3">
             <span className="text-[#7b1824] font-bold">04</span>
             <span className="text-[#d8cfc2]">/</span>
-            <span>THE CORE METHODOLOGY</span>
+            <span>THE ZERO HOUR EXPERIENCE // 6-STEP LEARNING CYCLE</span>
           </div>
           <div className="text-[#7b1824] font-semibold">
-            SEQUENCE {current.step} / 06
+            STEP {current.step} / 06
           </div>
         </div>
 
         {/* Section Headline */}
         <div className="mb-14">
           <h2 className="font-serif text-3xl sm:text-5xl text-[#0e141e] uppercase tracking-tight font-normal">
-            The Dialectical <span className="italic text-[#7b1824]">Sequence</span>
+            The Zero Hour <span className="italic text-[#7b1824]">Experience</span>
           </h2>
           <p className="font-sans text-sm sm:text-base text-[#5c6776] mt-2 max-w-2xl">
-            Every simulation chamber, parliamentary caucus, and executive crisis room conforms to this six-stage intellectual progression.
+            Every simulation, workshop, and club activity follows this practical 6-step progression to help you develop real skills.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function ExperienceSequence() {
                 }`}
               >
                 <div className="font-mono text-[10px] text-[#7b1824] font-bold mb-1">
-                  PHASE // {stg.step}
+                  STEP // {stg.step}
                 </div>
                 <div className="font-serif text-base sm:text-lg uppercase tracking-tight font-bold">
                   {stg.word}
@@ -123,7 +123,7 @@ export default function ExperienceSequence() {
               <div className="lg:col-span-8 space-y-6">
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-[#7a8595] mb-1 font-medium">
-                    PHASE {current.step} DISCIPLINE
+                    STEP {current.step} PRACTICE
                   </div>
                   <h3 className="font-serif text-4xl sm:text-5xl text-[#0e141e] uppercase font-bold tracking-tight">
                     {current.word}
@@ -141,7 +141,7 @@ export default function ExperienceSequence() {
               {/* Right: Axiom */}
               <div className="lg:col-span-4 border-l border-[#e5dfd5] pl-6 lg:pl-8 py-2">
                 <span className="font-mono text-[10px] uppercase tracking-widest text-[#c29236] block mb-3 font-semibold">
-                  Foundational Maxim
+                  Guiding Philosophy
                 </span>
                 <blockquote className="font-serif italic text-xl text-[#7b1824] leading-snug">
                   "{current.quote}"
